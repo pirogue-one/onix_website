@@ -24,37 +24,27 @@
 
 </head>
 
-<body class="loading">
+<body >
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- HEADER -->
-    <div class="site-header">
-        <div class="container">
-            <div class="row">
-                <nav class="navbar navbar-default navbar-static-top">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-menu">
-                            <span class="sr-only">Toggle navigation</span>
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="/">
-                            <img src="images/logo-black.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#characteristics">Характеристики</a></li>
-                            <li><a href="#equipment">Комплектация</a></li>
-                            <li><a href="#contact">Контакты</a></li>
-                            <li class="phone"><a class="top_phone" href="tel:+78005503474">8 (800) 550-34-74</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+    <header class="header">
+        <div class="header-container">
+            <a class="header-logo-link" href="http://digitallime.ru/">
+                <img src="images/logo-black.svg" alt="logo">
+            </a>
+            <!-- <div class="collapse navbar-collapse" > -->
+            <ul class="header-menu" id="main-menu">
+                <li class="header-menu-item"><a class="header-menu-item" href="#characteristics">Характеристики</a></li>
+                <li class="header-menu-item"><a class="header-menu-item" href="#equipment">Комплектация</a></li>
+                <li class="header-menu-item"><a class="header-menu-item" href="#contact">Контакты</a></li>
+                <li class="header-menu-item"><a class="header-menu-item" href="tel:+78005503474">8 (800) 550-34-74</a></li>
+            </ul>
         </div>
-    </div> <!-- .site-header -->
+    </header>
+    <!-- END HEADER -->
 
     <!-- MAIN -->
     <main>
@@ -349,7 +339,7 @@
                 </div>
             </div>
         </section>
-        <section class="video-featured">
+        <!-- <section class="video-featured">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
@@ -360,6 +350,10 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section>
+            <video controls src="images/video/850yellow.m4v">
+            </video>
         </section>
         <section class="filter">
             <div class="container">
