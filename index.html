@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>ONIX | Лодки премиального качества</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+	
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <!-- Normailize Stylesheet -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body  class="loading">
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- HEADER -->
+    <div class="site-header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-static-top">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#main-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="/">
+						<img src="images/logo-black.svg" alt="">
+						</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#characteristics">Характеристики</a></li>
+                            <li><a href="#equipment">Комплектация</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+							<li class="phone"><a class="top_phone" href="tel:+78005503474">8 (800) 550-34-74</a></li>
+                        </ul>
+                    </div>
+                </nav>         
+            </div>
+        </div>
+    </div> <!-- .site-header -->
+
+
+    <!-- SLIDER -->
+    <div class="site-slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li class="slide">
+                    <div class="overlay"></div>
+                    <img src="images/webp/x12.webp" alt="">
+                    <div class="slider-caption">
+                        <div class="title">
+                            <h2>ONIX 12X CRUISER</h2>
+                            <h2>Роскошь флагмана</h2>
+							<h3>от 35 000 000₽</h3>
+                        </div>
+                        <a href="#" class="slider-button">Детали</a>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="overlay"></div>
+                    <img src="images/webp/x8.webp" alt="">
+                    <div class="slider-caption">
+                        <div class="title">
+                            <h2>ONIX 850 CRUISER</h2>
+                            <h2>Премиальный круиз</h2>
+							<h3>от 10 800 000₽</h3>
+                        </div>
+                        <a href="#" class="slider-button">Детали</a>
+                    </div>
+                </li>
+            </ul>
+        </div>   
+    </div> <!-- .site-slider -->
+    
+
+    <div class="first-section" id="characteristics">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Для тех, кто ценит совершенство</h3>
+                    <p>Откройте мир приключений с ONIX — эксклюзивной алюминиевой лодкой премиум-класса. Сочетание современного дизайна и передовых материалов, возможность тонкой конфигурации и комплектации. Роскошные материалы отделки и Carbon Edition. Испытайте истинный комфорт, безопасность и свободу — свяжитесь с отделом продаж и начните свою водную историю уже сегодня!
+                  <br><br>Место для кнопки с формой</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="image-holder">
+                        <img src="images/x8+x12.png" alt="" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center tab">
+				    <button class="tablinks" onclick="openBoat(event, 'x8')" id="defaultOpen">
+                    <img src="images/x8-blue.png" alt="" style="width:100%">
+                    <h4>ONIX 8x Cruiser</h4>
+					</button>
+                </div>
+                <div class="col-md-3 col-sm-6 text-center tab">
+				    <button class="tablinks" onclick="openBoat(event, 'x12')">
+                    <img src="images/x12-yellow.png" alt="" style="width:100%">
+                    <h4>Onix 12x Cruiser</h4>
+					</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="third-section" id="equipment">
+        <div id="x8" class="container tabcontent">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>ПРЕМИАЛЬНЫЙ КРУИЗ</h2>
+                    <span>ONIX 850 CRUISER</span>
+                    <p>Флагман компании ONIX, в котором собрано всё лучшее. Последние тенденции в дизайне не оставят вас незамеченным на воде. Превосходные мореходные качества делают её управление – удовольствием. Салон оснащён всем необходимым, чтобы не ограничивать себя в привычном комфорте: гальюн в полный рост и душ, камбузный блок, каюта с полноценными двумя спальными местами и  дополнительные два спальных места в кабине. Настоящий круизник в компактном размере, который не потребует от вас специальных условий обслуживания, хранения и транспортировки.
+                    <br><br>Не требует специальных навыков управления, условий хранения и транспортировки, что делает его идеальным выбором для активных людей.
+					<br><br>Тут цена</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/x8_color.png" alt="" style="width:100%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
+					<span>ONIX 850 CRUISER</span>
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="images/scheme/x8_1_scheme.webp" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                       <div class="numbertext">2 / 4</div>
+                       <img src="images/scheme/x8_2_scheme.webp" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                       <div class="numbertext">3 / 4</div>
+                       <img src="images/scheme/x8_3_scheme.webp" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides">
+                       <div class="numbertext">4 / 4</div>
+                       <img src="images/scheme/x8_4_scheme.webp" style="width:100%">
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                       <p id="caption"></p>
+                    </div>
+
+                    <div class="queue">
+                       <div class="column">
+                        <img class="demo cursor" src="images/scheme/x8_1_scheme.webp" style="width:100%" onclick="currentSlide(1)" alt="Вид сбоку">
+                       </div>
+                       <div class="column">
+                        <img class="demo cursor" src="images/scheme/x8_2_scheme.webp" style="width:100%" onclick="currentSlide(2)" alt="Вид сверху">
+                       </div>
+                       <div class="column">
+                        <img class="demo cursor" src="images/scheme/x8_3_scheme.webp" style="width:100%" onclick="currentSlide(3)" alt="Вид сверху интерьер">
+                       </div>
+                       <div class="column">
+                       <img class="demo cursor" src="images/scheme/x8_4_scheme.webp" style="width:100%" onclick="currentSlide(4)" alt="Вид спереди">
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ol>
+                        <li><img src="images/length.svg" class="fas"></img>Общая длина (без двигателя):<span class="tth">8,48 метра</span></li>
+                        <li><img src="images/width.svg" class="fas"></img> Ширина:<span class="tth">2,47 метра</span></li>
+                        <li><img src="images/draft.svg" class="fas"></img> Осадка:<span class="tth">0,45 метра</span></li>
+						<li><img src="images/weight.svg" class="fas"></img> Вес (без двигателя):<span class="tth">2290 kg</span></li>
+						<li><img src="images/passenger.svg" class="fas"></img> Пассажировместимость:<span class="tth">8 человек</span></li>
+						<li><img src="images/seat.svg" class="fas"></img>  Спальные места:<span class="tth">4 человека</span></li>
+						<li><img src="images/frame.svg" class="fas"></img> Корпус:<span class="tth">Алюминий</span></li>
+						<li><img src="images/classification.svg" class="fas"></img> Классификация:<span class="tth">C - прибрежный</span></li>
+						<li><img src="images/speed.svg" class="fas"></img> Максимальная скорость:<span class="tth">82-95 км/ч</span></li>
+						<li><img src="images/engine.svg" class="fas"></img> Двигатель:<span class="tth">250 – 600 л.с.</span></li>
+						<li><img src="images/fuel.svg" class="fas"></img> Топливный бак:<span class="tth">450 литров</span></li>
+						<li><img src="images/angle.svg" class="fas"></img> Угол на транце:<span class="tth">20 градусов</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+		
+		<div id="x12" class="container tabcontent">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>РОСКОШЬ ФЛАГМАНА</h2>
+                    <span>ONIX 12X CRUISER</span>
+                    <p>Представляем абсолютно новый флагман, воплощение передовых технологий, элегантного дизайна и непревзойдённого комфорта. Этот уникальный катер устанавливает новые стандарты роскошного отдыха, предлагая инновационные решения для самых взыскательных путешественников.
+                    <br><br>На борту вас ждут три просторные каюты с восемью спальными местами и два гальюна, обеспечивая удобство для вашей семьи и гостей. Система анти-качки гарантирует плавное движение, а современная климатическая система с генератором создаёт идеальный микроклимат в любую погоду. Эргономичный дизайн, стильные интерьеры и продуманная планировка создают атмосферу уюта и уединения. Для любителей активного отдыха предусмотрено место для гидроцикла, открывающее безграничные возможности для развлечений на воде. Отправляйтесь в путешествие с ONIX 12X и наслаждайтесь каждым мгновением на воде!</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/x12_color.png" alt="" style="width:100%">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
+					<span>ONIX 12X CRUISER</span>
+                    <div class="mySlides-2">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/scheme/x12_1_scheme.webp" style="width:100%">
+                    </div>
+
+                    <div class="mySlides-2">
+                       <div class="numbertext">2 / 3</div>
+                       <img src="images/scheme/x12_2_scheme.webp" style="width:100%">
+                    </div>
+
+                    <div class="mySlides-2">
+                       <div class="numbertext">3 / 3</div>
+                       <img src="images/scheme/x12_3_scheme.webp" style="width:100%">
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                       <p id="caption"></p>
+                    </div>
+
+                    <div class="queue">
+                       <div class="column">
+                        <img class="demo cursor" src="images/scheme/x12_1_scheme.webp" style="width:100%" onclick="currentSlide(1)" alt="Вид сверху главный салон">
+                       </div>
+                       <div class="column">
+                        <img class="demo cursor" src="images/scheme/x12_2_scheme.webp" style="width:100%" onclick="currentSlide(2)" alt="Вид сверху каюта">
+                       </div>
+                       <div class="column">
+                        <img class="demo cursor" src="images/scheme/x12_3_scheme.webp" style="width:100%" onclick="currentSlide(3)" alt="Вид сбоку">
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ol>
+                        <li><img src="images/length.svg" class="fas"></img>Общая длина (без двигателя):<span class="tth">11,9 метра</span></li>
+                        <li><img src="images/width.svg" class="fas"></img> Ширина:<span class="tth">3,9 метра</span></li>
+						<li><img src="images/passenger.svg" class="fas"></img> Пассажировместимость:<span class="tth">12 человек</span></li>
+						<li><img src="images/seat.svg" class="fas"></img>  Спальные места:<span class="tth">8 человек</span></li>
+						<li><img src="images/frame.svg" class="fas"></img> Корпус:<span class="tth">Морской алюминий H5083-111</span></li>
+						<li><img src="images/classification.svg" class="fas"></img> Классификация:<span class="tth">B - класс мореходности</span></li>
+						<li><img src="images/engine.svg" class="fas"></img> Двигатель:<span class="tth">600 – 1200 л.с.</span></li>
+						<li><img src="images/fuel.svg" class="fas"></img> Топливный бак:<span class="tth">1500 литров</span></li>
+						<li><img src="images/angle.svg" class="fas"></img> Угол на транце:<span class="tth">20 градусов</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="promotion-s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-left">
+                        <div class="product-image">
+                            <img src="images/product1.png" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h3>Тут комплектация</h3>
+                            <p>Аккордеон как на твоей посадке</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-right">
+                        <div class="product-image">
+                            <img src="images/product2.png" alt="">
+                        </div>
+                        <div class="product-content">
+                            <h3>А тут опции</h3>
+                            <p>Еще один аккордеон</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="video-featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="video-holder">
+                        <iframe width="860" height="480" frameborder="0" src="images/video/850yellow.m4v" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="filter-controls controls">
+                        <li class="filter active" data-filter="mix">ONIX</li>
+                        <li class="filter" data-filter="category-1">850 CRUISER</li>
+                        <li class="filter" data-filter="category-2">12X CRUISER</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div id="Grid">
+                <div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_ext_1.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_ext_1.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_ext_2.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_ext_2.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_ext_3.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_ext_3.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_ext_4.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_ext_4.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>				
+                </div>
+				<div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_int_1.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_int_1.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>				
+                </div>
+				<div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_int_2.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_int_2.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>				
+                </div>
+				<div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_int_3.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_int_3.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>				
+                </div>
+				<div class="mix category-1 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_850_int_4.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_850_int_4.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>				
+                </div>
+                <div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_ext_1.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_ext_1.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_ext_2.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_ext_2.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_ext_3.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_ext_3.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_ext_4.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_ext_4.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_int_1.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_int_1.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_int_2.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_int_2.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+			    <div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_int_3.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_int_3.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="mix category-2 col-md-3 col-sm-6">
+                    <div class="thumb-p">
+                        <img src="images/gallery/onix_12_int_4.webp" alt="">
+                        <div class="overlay-p">
+                            <a href="images/gallery/onix_12_int_4.webp" data-rel="lightbox"><i class="fa fa-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fourth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>ОСТАЛИСЬ ВОПРОСЫ ?</h2>
+                    <a href="contact.html">ПОДРОБНАЯ ИНФОРМАЦИЯ В ОТДЕЛЕ ПРОДАЖ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="map-holder">
+                        <div id="map_canvas" class="map-canvas" style="height: 360px;"></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="container-fos">
+                            <div class="screen">
+                                <div class="screen-body">
+                                    <div class="screen-body-item left">
+                                        <div class="app-title">
+                                            <span>СВЯЖИТЕСЬ</span>
+                                            <span>С НАМИ</span>
+                                        </div>
+                                        <div class="app-contact">
+		                                    <p>Россия, г. Самара, Московское шоссе 18 км. лит. А, корп. 3</p>
+                                            <p>sale@onixboats.com</p>
+		                                    <p>8 (800) 550-34-74</p>
+		                                </div>
+                                    </div>
+                                    <div class="screen-body-item">
+                                        <div class="app-form">
+                                            <div class="app-form-group">
+                                                <input class="app-form-control" placeholder="ИМЯ">
+                                            </div>
+			                                <div class="app-form-group">
+                                                <input class="app-form-control" placeholder="ТЕЛЕФОН">
+                                            </div>
+                                            <div class="app-form-group">
+                                                <input class="app-form-control" placeholder="EMAIL">
+                                            </div>
+                                            <div class="app-form-group message">
+                                                <input class="app-form-control" placeholder="СООБЩЕНИЕ">
+                                            </div>
+                                            <div class="app-form-group buttons">
+                                                <button class="app-form-button">ОТМЕНА</button>
+                                                <button class="app-form-button">ОТПРАВИТЬ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="social">
+                        <li class="twitter"><a href="#" class="fa fa-twitter"></a></li>
+                        <li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
+                        <li class="rss"><a href="#" class="fa fa-rss"></a></li>
+                        <li class="linkedin"><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                    <p>Copyright &copy; 2084 Company Name</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>    
+	<script src="js/tab.js"></script>  
+    <script src="js/scheme.js"></script>
+    
+</body>
+</html>
