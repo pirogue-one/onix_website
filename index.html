@@ -10,6 +10,11 @@
     <title>ONIX | Лодки премиального качества</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <!-- Bootstrap Stylesheet -->
     <!-- <link rel="stylesheet" href="dist/css/bootstrap.min.css"> -->
     <!-- FontAwesome Icons -->
@@ -24,7 +29,7 @@
 
 </head>
 
-<body >
+<body>
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -35,12 +40,12 @@
             <a class="header-logo-link" href="http://digitallime.ru/">
                 <img src="images/logo-black.svg" alt="logo">
             </a>
-            <!-- <div class="collapse navbar-collapse" > -->
             <ul class="header-menu" id="main-menu">
                 <li class="header-menu-item"><a class="header-menu-item" href="#characteristics">Характеристики</a></li>
                 <li class="header-menu-item"><a class="header-menu-item" href="#equipment">Комплектация</a></li>
                 <li class="header-menu-item"><a class="header-menu-item" href="#contact">Контакты</a></li>
-                <li class="header-menu-item"><a class="header-menu-item" href="tel:+78005503474">8 (800) 550-34-74</a></li>
+                <li class="header-menu-item"><a class="header-menu-item" href="tel:+78005503474">8 (800) 550-34-74</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -57,10 +62,10 @@
                         <img class="hero-img" src="images/webp/x12.webp" alt="">
                         <div class="slider-caption">
                             <div class="title">
-                                <h1>ONIX 12X CRUISER<br />
-                                    Роскошь флагмана
-                                </h1>
                                 <p>от 35 000 000₽</p>
+                                <h1 class="main-title">Роскошь флагмана<br />
+                                    ONIX 12X CRUISER
+                                </h1>
                             </div>
                             <a href="#" class="slider-button">Детали</a>
                         </div>
@@ -70,10 +75,10 @@
                         <img class="hero-img" src="images/webp/x8.webp" alt="">
                         <div class="slider-caption">
                             <div class="title">
-                                <h2>ONIX 850 CRUISER<br />
-                                    Премиальный круиз
-                                </h2>
                                 <p>от 10 800 000₽</p>
+                                <h2 class="main-title">Премиальный круиз<br />
+                                    ONIX 850 CRUISER
+                                </h2>
                             </div>
                             <a href="#" class="slider-button">Детали</a>
                         </div>
@@ -82,30 +87,29 @@
             </div>
             <div class="swiper-btn swiper-button-next"></div>
             <div class="swiper-btn swiper-button-prev"></div>
-        </div> <!-- .site-slider -->
-        <section class="first-section" id="characteristics">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Для тех, кто ценит совершенство</h3>
-                        <p>Откройте мир приключений с ONIX — эксклюзивной алюминиевой лодкой премиум-класса. Сочетание
-                            современного дизайна и передовых материалов, возможность тонкой конфигурации и комплектации.
-                            Роскошные материалы отделки и Carbon Edition. Испытайте истинный комфорт, безопасность и
-                            свободу — свяжитесь с отделом продаж и начните свою водную историю уже сегодня!
-                            <br><br>Место для кнопки с формой
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div class="image-holder">
-                            <img src="images/x8+x12.png" alt="" style="width:100%">
-                        </div>
-                    </div>
+        </div>
+        <!-- .site-slider -->
+        <section class="description" id="characteristics">
+            <div class="description-container">
+                <div class="col-md-6">
+                    <h3 class="description-header">Для тех, кто ценит совершенство</h3>
+                    <p class="description-text">Откройте мир приключений с ONIX — эксклюзивной алюминиевой лодкой
+                        премиум-класса. Сочетание
+                        современного дизайна и передовых материалов, возможность тонкой конфигурации и комплектации.
+                        Роскошные материалы отделки и Carbon Edition. Испытайте истинный комфорт, безопасность и
+                        свободу — свяжитесь с отделом продаж и начните свою водную историю уже сегодня!
+                    </p>
                 </div>
+                <!-- <div class="col-md-6 text-center">
+                    <div class="image-holder">
+                        <img src="images/x8+x12.png" alt="" style="width:100%">
+                    </div>
+                </div> -->
             </div>
         </section>
         <section class="second-section">
             <div class="container">
-                <div class="row">
+                <div class="second-container">
                     <div class="col-md-3 col-sm-6 text-center tab">
                         <button class="tablinks" onclick="openBoat(event, 'x8')" id="defaultOpen">
                             <img src="images/x8-blue.png" alt="" style="width:100%">
@@ -123,30 +127,70 @@
         </section>
         <section class="third-section" id="equipment">
             <div id="x8" class="container tabcontent">
-                <div class="row">
+                <div class="third-section-card">
                     <div class="col-md-6">
-                        <h2>ПРЕМИАЛЬНЫЙ КРУИЗ</h2>
-                        <span>ONIX 850 CRUISER</span>
-                        <p>Флагман компании ONIX, в котором собрано всё лучшее. Последние тенденции в дизайне не оставят
-                            вас незамеченным на воде. Превосходные мореходные качества делают её управление –
-                            удовольствием. Салон оснащён всем необходимым, чтобы не ограничивать себя в привычном
-                            комфорте: гальюн в полный рост и душ, камбузный блок, каюта с полноценными двумя спальными
-                            местами и дополнительные два спальных места в кабине. Настоящий круизник в компактном
-                            размере, который не потребует от вас специальных условий обслуживания, хранения и
-                            транспортировки.
-                            <br><br>Не требует специальных навыков управления, условий хранения и транспортировки, что
-                            делает его идеальным выбором для активных людей.
-                            <br><br>Тут цена
-                        </p>
+                        <h2 class="third-section-card-title">ONIX 850 CRUISER</h2>
+                        <p class="third-section-card-text">ПРЕМИАЛЬНЫЙ КРУИЗ</p>
+                        <div class="third-section-container-text">
+                            <p>Флагман компании ONIX, в котором собрано всё лучшее. Последние тенденции в дизайне не
+                                оставят
+                                вас незамеченным на воде. Превосходные мореходные качества делают её управление –
+                                удовольствием. Салон оснащён всем необходимым, чтобы не ограничивать себя в привычном
+                                комфорте: гальюн в полный рост и душ, камбузный блок, каюта с полноценными двумя
+                                спальными
+                                местами и дополнительные два спальных места в кабине. Настоящий круизник в компактном
+                                размере, который не потребует от вас специальных условий обслуживания, хранения и
+                                транспортировки.
+                                <br><br>Не требует специальных навыков управления, условий хранения и транспортировки,
+                                что
+                                делает его идеальным выбором для активных людей.
+                            </p>
+                            <p>от 10 800 000₽</p>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/x8_color.png" alt="" style="width:100%">
+                        <img src="images/x8_color.png" alt="">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <h2>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
-                        <span>ONIX 850 CRUISER</span>
+                    <div class="characteristics-container">
+                        <ul>
+                            <li><img src="images/length.svg" class="fas"></img>Общая длина (без двигателя):<span
+                                    class="tth">&nbsp;8,48 метра</span></li>
+                            <li><img src="images/width.svg" class="fas"></img> Ширина:<span class="tth">&nbsp;2,47
+                                    метра</span></li>
+                            <li><img src="images/draft.svg" class="fas"></img> Осадка:<span class="tth">&nbsp;0,45
+                                    метра</span></li>
+                            <li><img src="images/weight.svg" class="fas"></img> Вес (без двигателя):<span
+                                    class="tth">&nbsp;2290 kg</span></li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/passenger.svg" class="fas"></img> Пассажировместимость:<span
+                                    class="tth">&nbsp;8 человек</span></li>
+                            <li><img src="images/seat.svg" class="fas"></img> Спальные места:<span class="tth">&nbsp;4
+                                    человека</span></li>
+                            <li><img src="images/frame.svg" class="fas"></img> Корпус:<span
+                                    class="tth">&nbsp;Алюминий</span>
+                            </li>
+                            <li><img src="images/classification.svg" class="fas"></img> Классификация:<span
+                                    class="tth">&nbsp;C - прибрежный</span></li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/speed.svg" class="fas"></img> Максимальная скорость:<span
+                                    class="tth">&nbsp;82-95 км/ч</span></li>
+                            <li><img src="images/engine.svg" class="fas"></img> Двигатель:<span class="tth">&nbsp;250 –
+                                    600
+                                    л.с.</span></li>
+                            <li><img src="images/fuel.svg" class="fas"></img> Топливный бак:<span class="tth">&nbsp;450
+                                    литров</span></li>
+                            <li><img src="images/angle.svg" class="fas"></img> Угол на транце:<span class="tth">&nbsp;20
+                                    градусов</span></li>
+                        </ul>
+                    </div>
+                    <div class="third-section-container-info">
+                        <h2 class="third-section-card-title">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+                        </h2>
+                        <p class="third-section-card-text">ONIX 850 CRUISER</p>
                         <div class="mySlides">
                             <div class="numbertext">1 / 4</div>
                             <img src="images/scheme/x8_1_scheme.webp" style="width:100%">
@@ -193,59 +237,73 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <ol>
-                            <li><img src="images/length.svg" class="fas"></img>Общая длина (без двигателя):<span
-                                    class="tth">8,48 метра</span></li>
-                            <li><img src="images/width.svg" class="fas"></img> Ширина:<span class="tth">2,47
-                                    метра</span></li>
-                            <li><img src="images/draft.svg" class="fas"></img> Осадка:<span class="tth">0,45
-                                    метра</span></li>
-                            <li><img src="images/weight.svg" class="fas"></img> Вес (без двигателя):<span
-                                    class="tth">2290 kg</span></li>
-                            <li><img src="images/passenger.svg" class="fas"></img> Пассажировместимость:<span
-                                    class="tth">8 человек</span></li>
-                            <li><img src="images/seat.svg" class="fas"></img> Спальные места:<span class="tth">4
-                                    человека</span></li>
-                            <li><img src="images/frame.svg" class="fas"></img> Корпус:<span class="tth">Алюминий</span>
-                            </li>
-                            <li><img src="images/classification.svg" class="fas"></img> Классификация:<span
-                                    class="tth">C - прибрежный</span></li>
-                            <li><img src="images/speed.svg" class="fas"></img> Максимальная скорость:<span
-                                    class="tth">82-95 км/ч</span></li>
-                            <li><img src="images/engine.svg" class="fas"></img> Двигатель:<span class="tth">250 – 600
-                                    л.с.</span></li>
-                            <li><img src="images/fuel.svg" class="fas"></img> Топливный бак:<span class="tth">450
-                                    литров</span></li>
-                            <li><img src="images/angle.svg" class="fas"></img> Угол на транце:<span class="tth">20
-                                    градусов</span></li>
-                        </ol>
-                    </div>
                 </div>
             </div>
 
             <div id="x12" class="container tabcontent">
-                <div class="row">
+                <div class="third-section-card">
                     <div class="col-md-6">
-                        <h2>РОСКОШЬ ФЛАГМАНА</h2>
-                        <span>ONIX 12X CRUISER</span>
-                        <p>Представляем абсолютно новый флагман, воплощение передовых технологий, элегантного дизайна и
-                            непревзойдённого комфорта. Этот уникальный катер устанавливает новые стандарты роскошного
-                            отдыха, предлагая инновационные решения для самых взыскательных путешественников.
-                            <br><br>На борту вас ждут три просторные каюты с восемью спальными местами и два гальюна,
-                            обеспечивая удобство для вашей семьи и гостей. Система анти-качки гарантирует плавное
-                            движение, а современная климатическая система с генератором создаёт идеальный микроклимат в
-                            любую погоду. Эргономичный дизайн, стильные интерьеры и продуманная планировка создают
-                            атмосферу уюта и уединения. Для любителей активного отдыха предусмотрено место для
-                            гидроцикла, открывающее безграничные возможности для развлечений на воде. Отправляйтесь в
-                            путешествие с ONIX 12X и наслаждайтесь каждым мгновением на воде!
-                        </p>
+                        <h2 class="third-section-card-title">ONIX 12X CRUISER</h2>
+                        <p class="third-section-card-text">РОСКОШЬ ФЛАГМАНА</p>
+                        <div class="third-section-container-text">
+                            <p>Представляем абсолютно новый флагман, воплощение передовых технологий, элегантного
+                                дизайна и
+                                непревзойдённого комфорта. Этот уникальный катер устанавливает новые стандарты
+                                роскошного
+                                отдыха, предлагая инновационные решения для самых взыскательных путешественников.
+                                <br><br>На борту вас ждут три просторные каюты с восемью спальными местами и два
+                                гальюна,
+                                обеспечивая удобство для вашей семьи и гостей. Система анти-качки гарантирует плавное
+                                движение, а современная климатическая система с генератором создаёт идеальный
+                                микроклимат в
+                                любую погоду. Эргономичный дизайн, стильные интерьеры и продуманная планировка создают
+                                атмосферу уюта и уединения. Для любителей активного отдыха предусмотрено место для
+                                гидроцикла, открывающее безграничные возможности для развлечений на воде. Отправляйтесь
+                                в
+                                путешествие с ONIX 12X и наслаждайтесь каждым мгновением на воде!
+                            </p>
+                            <p>от 10 800 000₽</p>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="images/x12_color.png" alt="" style="width:100%">
+                        <img src="images/x12_color.png" alt="картинка ONIX 12X">
                     </div>
                 </div>
                 <div class="row">
+                    <div class="characteristics-container">
+                        <ul>
+                            <li><img src="images/length.svg" class="fas"></img>Общая длина (без двигателя):<span
+                                    class="tth">&nbsp;8,48 метра</span></li>
+                            <li><img src="images/width.svg" class="fas"></img> Ширина:<span class="tth">&nbsp;2,47
+                                    метра</span></li>
+                            <li><img src="images/draft.svg" class="fas"></img> Осадка:<span class="tth">&nbsp;0,45
+                                    метра</span></li>
+                            <li><img src="images/weight.svg" class="fas"></img> Вес (без двигателя):<span
+                                    class="tth">&nbsp;2290 kg</span></li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/passenger.svg" class="fas"></img> Пассажировместимость:<span
+                                    class="tth">&nbsp;8 человек</span></li>
+                            <li><img src="images/seat.svg" class="fas"></img> Спальные места:<span class="tth">&nbsp;4
+                                    человека</span></li>
+                            <li><img src="images/frame.svg" class="fas"></img> Корпус:<span
+                                    class="tth">&nbsp;Алюминий</span>
+                            </li>
+                            <li><img src="images/classification.svg" class="fas"></img> Классификация:<span
+                                    class="tth">&nbsp;C - прибрежный</span></li>
+                        </ul>
+                        <ul>
+                            <li><img src="images/speed.svg" class="fas"></img> Максимальная скорость:<span
+                                    class="tth">&nbsp;82-95 км/ч</span></li>
+                            <li><img src="images/engine.svg" class="fas"></img> Двигатель:<span class="tth">&nbsp;250 –
+                                    600
+                                    л.с.</span></li>
+                            <li><img src="images/fuel.svg" class="fas"></img> Топливный бак:<span class="tth">&nbsp;450
+                                    литров</span></li>
+                            <li><img src="images/angle.svg" class="fas"></img> Угол на транце:<span class="tth">&nbsp;20
+                                    градусов</span></li>
+                        </ul>
+                    </div>
                     <div class="col-md-6">
                         <h2>ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
                         <span>ONIX 12X CRUISER</span>
@@ -285,28 +343,6 @@
                                     onclick="currentSlide(3)" alt="Вид сбоку">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <ol>
-                            <li><img src="images/length.svg" class="fas"></img>Общая длина (без двигателя):<span
-                                    class="tth">11,9 метра</span></li>
-                            <li><img src="images/width.svg" class="fas"></img> Ширина:<span class="tth">3,9 метра</span>
-                            </li>
-                            <li><img src="images/passenger.svg" class="fas"></img> Пассажировместимость:<span
-                                    class="tth">12 человек</span></li>
-                            <li><img src="images/seat.svg" class="fas"></img> Спальные места:<span class="tth">8
-                                    человек</span></li>
-                            <li><img src="images/frame.svg" class="fas"></img> Корпус:<span class="tth">Морской алюминий
-                                    H5083-111</span></li>
-                            <li><img src="images/classification.svg" class="fas"></img> Классификация:<span
-                                    class="tth">B - класс мореходности</span></li>
-                            <li><img src="images/engine.svg" class="fas"></img> Двигатель:<span class="tth">600 – 1200
-                                    л.с.</span></li>
-                            <li><img src="images/fuel.svg" class="fas"></img> Топливный бак:<span class="tth">1500
-                                    литров</span></li>
-                            <li><img src="images/angle.svg" class="fas"></img> Угол на транце:<span class="tth">20
-                                    градусов</span></li>
-                        </ol>
                     </div>
                 </div>
             </div>

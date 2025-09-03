@@ -1,12 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 
-*,
+/* *,
 *:before,
 *:after {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 html,
@@ -807,26 +814,31 @@ h6 {
   position: absolute;
   z-index: 12;
   width: 100%;
-  top: 10%;
-  left: 20%;
+  top: 30%;
+  left: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.site-slider .slider-caption .title {
+
+
+/* .site-slider .slider-caption .title {
   width: 460px;
   margin: 0 auto;
   border: 4px solid #fff;
   padding: 20px 20px 20px 20px;
   text-align: center;
-}
+} */
 
-.site-slider .slider-caption .title h2 {
+/* .site-slider .slider-caption .title h2 {
   margin: 0 0 10px 0;
   font-size: 28px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-}
+} */
 
 .site-slider .slider-caption .title h3 {
   margin: 0 0 10px 130px;
@@ -852,7 +864,7 @@ h6 {
   background-clip: padding-box;
 }
 
-.first-section {
+/* .first-section {
   color: #fff;
   position: relative;
   z-index: 17;
@@ -860,7 +872,7 @@ h6 {
   margin-top: -86px;
   background: url(../images/webp/bg1.webp) no-repeat top center;
   background-size: cover;
-}
+} */
 
 .first-section h3 {
   text-transform: uppercase;
@@ -878,14 +890,14 @@ h6 {
   position: relative;
   z-index: 18;
   padding: 30px 0;
-  margin-top: -80px;
+  /* margin-top: -80px; */
   background: url(../images/webp/bg2.webp) no-repeat top center;
   background-size: cover;
 }
 
-.second-section .col-md-3 {
+/* .second-section .col-md-3 {
   margin-top: 20px;
-}
+} */
 
 .second-section h4 {
   font-size: 15px;
@@ -895,17 +907,12 @@ h6 {
 .third-section {
   color: #fff;
   position: relative;
-  z-index: 19;
-  padding: 80px 0 20px 0;
-  margin-top: -30px;
+  /* z-index: 19; */
+  padding: 80px 30px 20px;
+  /* margin-top: -30px;
   background: url(../images/webp/bg3.webp) no-repeat top center;
-  background-size: cover;
-}
-
-.third-section h2 {
-  color: #FFC800;
-  font-weight: 700;
-  margin: 0;
+  background-size: cover; */
+  background-color: #222222;
 }
 
 .third-section .fas {
@@ -915,34 +922,6 @@ h6 {
   margin: 5px;
 }
 
-.third-section span {
-  display: block;
-  margin-bottom: 30px;
-  color: #FFC800;
-  font-size: large;
-}
-
-.third-section .tth {
-  color: #FFF;
-  display: inline-block;
-  padding-left: 10px;
-  margin: 0;
-  font-size: 14px;
-}
-
-.third-section .col-md-6 {
-  margin-bottom: 60px;
-}
-
-.third-section ol {
-  margin-top: 30px;
-  list-style-type: none;
-}
-
-.third-section ol li {
-  color: #FFC800;
-}
-
 .third-section ol li h4 {
   font-size: 15px;
   margin: 0;
@@ -950,14 +929,6 @@ h6 {
 
 .third-section ol li p {
   margin: 0 0 20px 20px;
-  color: #fff;
-}
-
-.third-section ol li ol {
-  margin: 0 0 30px 20px;
-}
-
-.third-section ol.no-color li {
   color: #fff;
 }
 
@@ -1375,7 +1346,6 @@ button.main-button,
 .icon-ttx {
   width: 32px;
 }
-}
 
 /* ==========================================================================
    Media Queries
@@ -1383,13 +1353,13 @@ button.main-button,
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  /* border: 1px solid #ccc;
+  background-color: #f1f1f1; */
 }
 
 .tab button {
   background-color: inherit;
-  float: left;
+  /* float: left; */
   border: none;
   outline: none;
   cursor: pointer;
@@ -1439,6 +1409,7 @@ img {
 
 .mySlides {
   display: none;
+  position: relative;
 }
 
 .mySlides-2 {
@@ -1478,9 +1449,9 @@ img {
 .numbertext {
   color: #FFC800;
   font-size: 12px;
-  padding: 80px 12px;
+  top: 3%;
+  left: 3%;
   position: absolute;
-  top: 0;
 }
 
 .caption-container {
@@ -1703,7 +1674,7 @@ li {
 }
 
 .header {
-  background-color: #FFC800;
+  background-color: #222222;
 }
 
 .header-container {
@@ -1715,6 +1686,10 @@ li {
 
 .header-menu-item {
   color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .header-menu {
@@ -1735,6 +1710,116 @@ li {
   color: #FFFFFF;
 }
 
+.main-title {
+  font-family: Bebas Neue;
+  font-weight: 700;
+  font-size: 92px;
+  line-height: 110.00000000000001%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.title>p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 30.8px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+/************ description ************/
+
+.description {
+  background-color: #222222;
+  padding: 30px;
+}
+
+.description-header {
+  font-family: Bebas Neue;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.description-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+
+
+.second-section {
+  background-color: #222222;
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.third-section-card {
+  display: flex;
+  align-items: center;
+}
+
+.characteristics-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+.characteristics-container ul li {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #FFC800;
+}
+
+.tth {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.third-section-card-title {
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: #FFC800;
+}
+
+.third-section-card-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.45px;
+  color: #FFC800;
+}
+
+.third-section-container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0;
+  width: 80%;
+}
+
+.third-section-container-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 
 /************ video ************/
 
@@ -1745,7 +1830,8 @@ video {
 
 /************ filter products ************/
 
-.filter, .fourth-section {
+.filter,
+.fourth-section {
   display: flex;
   justify-content: center;
 }
