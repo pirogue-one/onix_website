@@ -1745,7 +1745,7 @@ video {
 
 /************ filter products ************/
 
-.filter {
+.filter, .fourth-section {
   display: flex;
   justify-content: center;
 }
