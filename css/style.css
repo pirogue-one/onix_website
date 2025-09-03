@@ -17,11 +17,6 @@ textarea {
   color: #222;
 }
 
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -1029,12 +1024,12 @@ h6 {
   color: #FFC800;
 }
 
-.products {
+/* .products {
   background: url(../images/webp/productsbg.webp) no-repeat top center;
   background-size: cover;
   padding: 120px 0 80px 0;
   margin-top: -100px;
-}
+} */
 
 .products .thumb-p {
   overflow: hidden;
@@ -1745,6 +1740,35 @@ li {
 
 video {
   width: 100%;
+}
+
+
+/************ filter products ************/
+
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/************ products ************/
+
+.products {
+  background: url(../images/webp/productsbg.webp) no-repeat top center;
+  background-size: cover;
+  padding: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-card {
+  width: 23%;
 }
 
 @media screen and (max-width: 520px) {
