@@ -1472,6 +1472,15 @@ img {
   margin: 0 5px;
 }
 
+/************ hero ************/
+.hero-img {
+  width: 100%;
+}
+
+.swiper-btn {
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 520px) {
   .screen-body {
     flex-direction: column;
