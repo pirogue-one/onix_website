@@ -914,20 +914,20 @@ h6 {
 }
 
 .fourth-section {
-  color: #fff;
-  position: relative;
-  z-index: 19;
   padding: 150px 0;
-  margin-top: -50px;
-  background: url(../images/webp/bg4.webp) no-repeat top center;
+  background: url(../images/093bf80e495d06f2e786fe0d8d45be2196164805.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .fourth-section h2 {
-  font-size: 32px;
-  text-transform: uppercase;
+  font-family: Open Sans;
   font-weight: 700;
-  margin: 0 0 20px 0;
+  font-size: 32px;
+  line-height: 35.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .fourth-section a {
@@ -952,15 +952,15 @@ h6 {
   font-weight: 600;
 }
 
-.filter {
+/* .filter {
   background: url(../images/webp/filterbg.webp) no-repeat top center;
   background-size: cover;
   padding: 70px 0;
   margin-top: -70px;
-}
+} */
 
 .filter ul {
-  padding: 0;
+  padding: 80px 30px 30px;
   margin: 0;
   list-style: none;
 }
@@ -974,6 +974,7 @@ h6 {
 
 .filter ul li.active {
   color: #FFC800;
+  text-decoration: underline;
 }
 
 /* .products {
@@ -1462,17 +1463,9 @@ img {
   opacity: 1;
 }
 
-
-
-.container-fos {
-  flex: 0 1 700px;
-  margin: auto;
-  padding: 10px;
-}
-
-.screen {
+.form {
   position: relative;
-  background: #4f5450;
+  background-color: #222222;
   border-radius: 15px;
 }
 
@@ -1541,7 +1534,7 @@ img {
 
 .screen-body-item {
   flex: 1;
-  padding: 50px;
+  padding: 0 50px 50px;
 }
 
 .screen-body-item.left {
@@ -1578,13 +1571,8 @@ img {
   margin-bottom: 15px;
 }
 
-.app-form-group.message {
-  margin-top: 40px;
-}
-
 .app-form-group.buttons {
-  margin-bottom: 0;
-  text-align: right;
+  text-align: center;
 }
 
 .app-form-control {
@@ -1829,15 +1817,15 @@ li {
 }
 
 .third-section-btn-container p {
-opacity: 1;
-padding: 16px 32px;
-background-color: #373737;
-font-family: Inter;
-font-weight: 400;
-font-size: 24px;
-line-height: 100%;
-text-align: center;
-border: 0 solid #373737;
+  opacity: 1;
+  padding: 16px 32px;
+  background-color: #373737;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  border: 0 solid #373737;
 }
 
 .btn-yellow {
@@ -1867,6 +1855,7 @@ video {
 .fourth-section {
   display: flex;
   justify-content: center;
+  background-color: #303030;
 }
 
 
@@ -1874,8 +1863,7 @@ video {
 /************ products ************/
 
 .products {
-  background: url(../images/webp/productsbg.webp) no-repeat top center;
-  background-size: cover;
+  background-color: #303030;
   padding: 30px;
 }
 
@@ -1888,6 +1876,16 @@ video {
 
 .product-card {
   width: 23%;
+}
+
+.form h3 {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FCC800;
+  text-align: center;
+  padding-top: 50px;
 }
 
 @media screen and (max-width: 520px) {
