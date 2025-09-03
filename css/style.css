@@ -1,14 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 
 
-/* *,
-*:before,
-*:after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -16,12 +8,8 @@
   font-family: "Open Sans", sans-serif;
 }
 
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
+main {
+  background-color: #222222;
 }
 
 ::-moz-selection {
@@ -34,14 +22,6 @@ textarea {
   text-shadow: none;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
 
 img {
   vertical-align: middle;
@@ -820,6 +800,7 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 
 
@@ -1735,6 +1716,15 @@ li {
 .description {
   background-color: #222222;
   padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.description-container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .description-header {
@@ -1752,6 +1742,19 @@ li {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.btn-white {
+  opacity: 1;
+  padding: 9px 47px;
+  border: 2px solid #FFFFFF;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: inherit;
 }
 
 
@@ -1809,7 +1812,7 @@ li {
 .third-section-container-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 20px 0;
   width: 80%;
 }
@@ -1818,6 +1821,34 @@ li {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.third-section-btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.third-section-btn-container p {
+opacity: 1;
+padding: 16px 32px;
+background-color: #373737;
+font-family: Inter;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+text-align: center;
+}
+
+.btn-yellow {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+  background-color: #FCC800;
+  opacity: 1;
+  padding: 16px 32px;
 }
 
 
