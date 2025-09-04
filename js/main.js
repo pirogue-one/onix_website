@@ -17,10 +17,34 @@
 
 
 
-    $('#Grid').mixitup({
-        effects: ['fade','grayscale'],
-        easing: 'snap',
-        transitionSpeed: 800
+    // Custom filter for Swiper gallery
+    $('.filter-controls-btn').on('click', function() {
+        var filter = $(this).data('filter');
+        
+        // Remove active class from all buttons
+        $('.filter-controls-btn').removeClass('filter-controls-btn--active');
+        // Add active class to clicked button
+        $(this).addClass('filter-controls-btn--active');
+        
+        if (filter === 'all') {
+            // Show all slides
+            $('.swiper-slide').show();
+            // Update Swiper
+            if (window.galleryMain && window.galleryThumbs) {
+                window.galleryMain.update();
+                window.galleryThumbs.update();
+            }
+        } else {
+            // Hide all slides first
+            $('.swiper-slide').hide();
+            // Show only slides with matching category
+            $(filter).show();
+            // Update Swiper
+            if (window.galleryMain && window.galleryThumbs) {
+                window.galleryMain.update();
+                window.galleryThumbs.update();
+            }
+        }
     });
 
 
