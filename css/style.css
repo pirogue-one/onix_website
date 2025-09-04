@@ -1696,6 +1696,8 @@ a.header-menu-item:hover::after {
 
 .hero video {
   height: 100vh;
+  width: 100%;
+  object-fit: cover !important;
 }
 
 
