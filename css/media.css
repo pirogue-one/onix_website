@@ -54,9 +54,6 @@
 }
 
 @media (max-width: 790px) {
-    .header-container {
-        flex-direction: column;
-    }
 
     .header-menu {
         flex-wrap: wrap;
@@ -76,10 +73,10 @@
         font-size: 28px;
     }
 
-    .description-header,
+    /* .description-header,
     .third-section-container-text>p {
         font-size: 14px;
-    }
+    } */
 
     .third-section-btn-container {
         flex-direction: column;
@@ -117,6 +114,14 @@
 
     .form {
         padding: 30px;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    .header-menu-desc {
+        display: none;
     }
 
 }
