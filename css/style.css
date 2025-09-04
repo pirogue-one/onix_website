@@ -5,6 +5,11 @@
   src: url(../dist/fonts/Inter-Regular.ttf) format("ttf"), url(../dist/fonts/Inter-Regular.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../dist/fonts/BebasNeue_Bold.ttf) format("ttf"), url(../dist/fonts/BebasNeue_Bold.woff2) format("woff2");
+}
+
 
 * {
   box-sizing: border-box;
@@ -1617,6 +1622,41 @@ li {
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+a.header-menu-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  /* Высота линии */
+  background-color: #FFC800;
+  /* Цвет подчеркивания при исчезании линии*/
+  transition: width 0.5s;
+  /* Время эффекта */
+  cursor: pointer;
+}
+
+a.header-menu-item:hover::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  /* Высота линии */
+  background-color: #FFC800;
+  /* Цвет подчеркивания при появлении линии*/
+  transition: width 0.5s;
+  /* Время эффекта */
+  cursor: pointer;
 }
 
 .header-menu {
@@ -1638,7 +1678,7 @@ li {
 }
 
 .main-title {
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 92px;
   line-height: 110.00000000000001%;
@@ -1675,7 +1715,7 @@ li {
 }
 
 .description-header {
-  font-family: Bebas Neue;
+ font-family: "Bebas Neue", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
@@ -1742,7 +1782,7 @@ li {
 }
 
 .third-section-card-title {
-  font-family: Bebas Neue;
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 100%;
@@ -1853,7 +1893,7 @@ li {
 
 .tablinks h4 {
   transition: all 0.4s ease-out;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
