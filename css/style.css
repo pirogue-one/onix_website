@@ -1715,7 +1715,7 @@ a.header-menu-item:hover::after {
 }
 
 .description-header {
- font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
@@ -1987,7 +1987,7 @@ video {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding: 100px 30px 40px;
+  padding: 80px 30px 40px;
   background-color: #222222;
 }
 
@@ -2043,6 +2043,11 @@ hr {
 
 a:hover {
   color: #FCC800;
+}
+
+.contact-us-social {
+  display: flex;
+  gap: 10px;
 }
 
 

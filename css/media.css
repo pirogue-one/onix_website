@@ -85,6 +85,11 @@
         width: 100%;
     }
 
+    .footer {
+        padding: 40px 30px;
+        gap: 3rem;
+    }
+
     .footer-container {
         flex-direction: column;
         gap: 32px;
