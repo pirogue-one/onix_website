@@ -69,7 +69,8 @@
     }
 
     .description-header,
-    .third-section-card-title {
+    .third-section-card-title,
+    .about-title {
         font-size: 28px;
     }
 
@@ -122,6 +123,24 @@
 
     .header-menu-desc {
         display: none;
+    }
+
+    .skill-title_container {
+        flex-direction: column;
+    }
+
+    .about-container,
+    .text-container {
+        gap: 10px;
+    }
+
+    .description-text,
+    .about-text {
+        font-size: 12px;
+    }
+
+    .skill-title_container img {
+        width: 100%;
     }
 
 }

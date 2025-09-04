@@ -2099,14 +2099,61 @@ a:hover {
 }
 
 #menu {
-    display: none;
+  display: none;
 }
 
 .nav-img {
-    width: 24px;
-    cursor: pointer;
+  width: 24px;
+  cursor: pointer;
 }
 
+
+/******** about *********/
+
+.about {
+  background-color: #303030;
+  padding: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.about-title {
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.skill-title_container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.skill-title_container img {
+  width: 50%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  width: 100%;
+}
+
+.about-text {
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 520px) {
   .screen-body {
