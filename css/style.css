@@ -1092,9 +1092,11 @@ button.main-button,
 }
 
 .contact {
+  background: url(../images/webp/contactonix.webp) no-repeat top center;
+  background-size: cover;
+  padding: 120px 0;
   display: flex;
   justify-content: space-around;
-  position: relative;
 }
 
 .contact fieldset {
@@ -1667,7 +1669,7 @@ a.header-menu-item:hover::after {
 
 
 /************ hero ************/
-/* .hero-img {
+.hero-img {
   width: 100%;
 }
 
@@ -1692,12 +1694,6 @@ a.header-menu-item:hover::after {
   line-height: 30.8px;
   text-align: center;
   color: #FFFFFF;
-} */
-
-.hero video {
-  height: 100vh;
-  width: 100%;
-  object-fit: cover !important;
 }
 
 
@@ -1719,7 +1715,7 @@ a.header-menu-item:hover::after {
 }
 
 .description-header {
-  font-family: "Bebas Neue", "Open Sans", sans-serif;
+ font-family: "Bebas Neue", "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
@@ -1804,7 +1800,7 @@ a.header-menu-item:hover::after {
 .third-section-container-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 32px;
   padding: 20px 0;
   width: 80%;
 }
@@ -1906,7 +1902,6 @@ a.header-menu-item:hover::after {
   transform: scale(2);
 }
 
-
 /************ video ************/
 
 video {
@@ -1948,10 +1943,11 @@ video {
 .contacts-container {
   background-color: #222222;
   padding: 32px;
+  width: 440px;
 }
 
 .contacts_text {
-  font-family: "Open Sans", sans-serif;
+  font-family: Open Sans;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1990,21 +1986,13 @@ video {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding: 80px 30px 40px;
+  padding: 100px 30px 40px;
   background-color: #222222;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-container iframe {
-  width: 65%;
-}
-
-.footer-contacts-container-policy {
-  align-items: flex-end;
 }
 
 .footer-contacts-container {
@@ -2054,11 +2042,6 @@ hr {
 
 a:hover {
   color: #FCC800;
-}
-
-.contact-us-social {
-  display: flex;
-  gap: 10px;
 }
 
 
