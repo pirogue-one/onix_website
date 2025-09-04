@@ -1092,11 +1092,9 @@ button.main-button,
 }
 
 .contact {
-  background: url(../images/webp/contactonix.webp) no-repeat top center;
-  background-size: cover;
-  padding: 120px 0;
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 
 .contact fieldset {
@@ -1944,11 +1942,10 @@ video {
 .contacts-container {
   background-color: #222222;
   padding: 32px;
-  width: 440px;
 }
 
 .contacts_text {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
