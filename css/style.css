@@ -8,7 +8,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-main {
+body {
   background-color: #222222;
 }
 
@@ -1085,7 +1085,8 @@ button.main-button,
   background: url(../images/webp/contactonix.webp) no-repeat top center;
   background-size: cover;
   padding: 120px 0;
-  margin-top: -50px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact fieldset {
@@ -1262,61 +1263,6 @@ button.main-button,
   display: block;
 }
 
-/*  Medium devices (desktops, 992px and up)  */
-@media (max-width: 992px) {
-  .slider-button {
-    display: none;
-  }
-}
-
-/*  Small devices (tablets, 768px and up)  */
-@media (max-width: 768px) {
-  .slider-caption {
-    display: none;
-  }
-
-  .first-section {
-    background-position: left;
-    margin-top: -25px;
-  }
-
-  .first-section .container {
-    margin-top: -60px;
-  }
-
-  .second-section {
-    background-position: right;
-  }
-
-  .second-section .row {
-    display: flex;
-  }
-
-  .second-section .tab {
-    width: 50%;
-  }
-
-  .third-section {
-    background-position: left;
-  }
-
-  .third-section .container {
-    margin-top: -50px;
-  }
-
-  .video-featured {
-    background-position: right;
-  }
-
-  .promotion-s {
-    background-position: right;
-  }
-
-  .products {
-    margin-top: -115px;
-  }
-}
-
 .contact form {
   margin-top: 60px;
 }
@@ -1466,7 +1412,6 @@ img {
 .form {
   position: relative;
   background-color: #222222;
-  border-radius: 15px;
 }
 
 .screen:after {
@@ -1705,7 +1650,7 @@ li {
   background-color: #222222;
   padding: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .description-container {
@@ -1713,6 +1658,7 @@ li {
   gap: 20px;
   flex-direction: column;
   align-items: flex-start;
+  width: 60%;
 }
 
 .description-header {
@@ -1828,6 +1774,10 @@ li {
   border: 0 solid #373737;
 }
 
+.third-section-img img {
+  width: 100%;
+}
+
 .btn-yellow {
   font-family: Inter;
   font-weight: 400;
@@ -1878,6 +1828,31 @@ video {
   width: 23%;
 }
 
+/************ contacts ************/
+
+.contacts_container {
+  background-color: #222222;
+  padding: 32px;
+  width: 440px;
+}
+
+.contacts_text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+/************ form ************/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 440px;
+}
+
 .form h3 {
   font-family: Inter;
   font-weight: 400;
@@ -1886,7 +1861,79 @@ video {
   color: #FCC800;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 32px;
 }
+
+
+/************ footer ************/
+
+
+.footer-wrapper {
+  background-color: #134D3F;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 100px 30px 40px;
+  background-color: #222222;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_contacts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+hr {
+  border: 1px solid #FFFFFF;
+}
+
+.footer_info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer_text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_info-text {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 150%;
+  letter-spacing: 0.0px;
+}
+
+.contacts_info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contacts_info-top {
+  align-items: flex-start;
+}
+
+.contacts_container-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+a:hover {
+  color: #FCC800;
+}
+
 
 @media screen and (max-width: 520px) {
   .screen-body {

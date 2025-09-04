@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="dist/css/swiper-bundle.min.css" />
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="dist/js/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
@@ -145,8 +146,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="images/x8_color.png" alt="">
+                    <div class="third-section-img">
+                        <img src="images/x8_color.png" alt="картинка x8">
                     </div>
                 </div>
                 <div class="row">
@@ -265,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="third-section-img">
                         <img src="images/x12_color.png" alt="картинка ONIX 12X">
                     </div>
                 </div>
@@ -347,7 +348,7 @@
                 </div>
             </div>
         </section>
-        <section class="promotion-s">
+        <!-- <section class="promotion-s">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -374,7 +375,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section>
             <video controls src="images/video/850yellow.m4v">
             </video>
@@ -545,63 +546,87 @@
             </div>
         </section>
         <section class="fourth-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2>ОСТАЛИСЬ ВОПРОСЫ ?</h2>
-                        <div class="form">
-                            <h3>Свяжитесь с нами</h3>
-                                <div class="screen-body-item">
-                                    <div class="app-form">
-                                        <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="ИМЯ">
-                                        </div>
-                                        <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="ТЕЛЕФОН">
-                                        </div>
-                                        <div class="app-form-group">
-                                            <input class="app-form-control" placeholder="EMAIL">
-                                        </div>
-                                        <div class="app-form-group message">
-                                            <input class="app-form-control" placeholder="СООБЩЕНИЕ">
-                                        </div>
-                                        <div class="app-form-group buttons">
-                                            <button class="app-form-button">ОТПРАВИТЬ</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </h3>
+            <div class="form-container">
+                <h2>ОСТАЛИСЬ ВОПРОСЫ ?</h2>
+                <div class="form">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="ИМЯ">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="ТЕЛЕФОН">
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" placeholder="EMAIL">
+                            </div>
+                            <div class="app-form-group message">
+                                <input class="app-form-control" placeholder="СООБЩЕНИЕ">
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">ОТПРАВИТЬ</button>
+                            </div>
                         </div>
                     </div>
+                    </h3>
                 </div>
             </div>
         </section>
         <section class="contact" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="map-holder">
-                            <div id="map_canvas" class="map-canvas" style="height: 360px;"></div>
-                        </div>
+            <div class="contacts_container">
+                <div class="contacts_container-group">
+                    <div class="contacts_info">
+                        <p class="contacts_text">Россия, г. Самара, <br />
+                            Московское шоссе 18км. лит. А, корп. 3</p>
                     </div>
-
+                    <div class="contacts_info">
+                        <a href="mailto:sale@onixboats.com" class="contacts_text">dombezdyr@yandex.ru</a>
+                    </div>
+                    <div class="contacts_info">
+                        <a href="tel:+78005503474" class="contacts_text">8&nbsp;(800)&nbsp;550-34-74</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <!-- .site-main -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <ul class="social">
-                        <li class="twitter"><a href="#" class="fa fa-twitter"></a></li>
-                        <li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
-                        <li class="rss"><a href="#" class="fa fa-rss"></a></li>
-                        <li class="linkedin"><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                    <p>Copyright &copy; 2084 Company Name</p>
+    <footer class="footer">
+        <img src="images/logo-black.svg" alt="logo" width="152">
+        <div class="footer_container">
+            <div class="footer_contacts-container">
+                <div class="contacts_container-group">
+                    <div class="contacts_info contacts_info-top">
+                        <img class="contact-icon" src="images/map-icon.png" alt="иконка геолокации" width="24">
+                        <div class="contacts_container-text">
+                            <p class="footer_info-text">Россия, г. Самара, <br />
+                                Московское шоссе 18км. лит. А, корп. 3</p>
+                        </div>
+                    </div>
+                    <div class="contacts_info">
+                        <img class="contact-icon" src="images/call.png" alt="иконка звонка" width="24">
+                        <div class="contacts_info">
+                            <a href="tel:+78005503474" class="footer_info-text">8&nbsp;(800)&nbsp;550-34-74</a>
+                            <div class="contact-us_social">
+                                <img src="images/tg-white.png" alt="tg" width="26">
+                                <img src="images/vk-white.png" alt="vk" width="26">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts_info">
+                        <img class="contact-icon" src="images/mail.png" alt="mail" width="24">
+                        <a href="mailto:sale@onixboats.com" class="footer_info-text">sale@onixboats.com</a>
+                    </div>
                 </div>
+            </div>
+            <div class="footer_contacts-container">
+                <a href="#" class="footer_info-text">Политики конфиденциальности</a>
+            </div>
+        </div>
+        <div class="footer_info-container">
+            <hr>
+            <div class="footer_text-container">
+                <p class="footer_info-text">©&nbsp;2025 Все права защищены.</p>
             </div>
         </div>
     </footer>
