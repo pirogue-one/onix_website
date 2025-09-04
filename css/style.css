@@ -1667,7 +1667,7 @@ a.header-menu-item:hover::after {
 
 
 /************ hero ************/
-.hero-img {
+/* .hero-img {
   width: 100%;
 }
 
@@ -1692,6 +1692,10 @@ a.header-menu-item:hover::after {
   line-height: 30.8px;
   text-align: center;
   color: #FFFFFF;
+} */
+
+.hero video {
+  height: 100vh;
 }
 
 
@@ -1991,6 +1995,14 @@ video {
 .footer-container {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-container iframe {
+  width: 65%;
+}
+
+.footer-contacts-container-policy {
+  align-items: flex-end;
 }
 
 .footer-contacts-container {

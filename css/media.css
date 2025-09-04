@@ -47,6 +47,10 @@
         width: 31%;
     }
 
+    .contacts-info-society {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 790px) {
@@ -93,6 +97,10 @@
     .footer-container {
         flex-direction: column;
         gap: 32px;
+    }
+
+    .footer-container iframe {
+        width: 100%;
     }
 
 }
