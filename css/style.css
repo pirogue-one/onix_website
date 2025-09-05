@@ -1737,6 +1737,16 @@ a.header-menu-item-accent::after {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 92px;
+  line-height: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main-title-under {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
   line-height: 110.00000000000001%;
   text-align: center;
   text-transform: uppercase;
@@ -1922,33 +1932,33 @@ a.header-menu-item-accent::after {
 }
 
 .advantages_cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem 0;
 }
 
 .advantages_card {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages_yellow-text {
-    font-family: "Bebas Neue", "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 120%;
-    letter-spacing: -0.6px;
-    color: #FCC800;
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.6px;
+  color: #FCC800;
 }
 
 .text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.0px;
-    color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.0px;
+  color: #FFFFFF;
 }
 
 /************ tabs ************/
