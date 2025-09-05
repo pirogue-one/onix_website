@@ -1897,17 +1897,15 @@ a.header-menu-item-accent::after {
 .third-section-btn-container-text {
   opacity: 1;
   padding: 18px 32px;
-  /* background-color: #373737; */
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   text-align: center;
-  /* border: 0 solid #373737; */
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #FCC800;
   background-color: inherit;
-  border: 2px solid #FFFFFF;
+  border: 0 solid #FFFFFF;
 }
 
 .btn-yellow {
