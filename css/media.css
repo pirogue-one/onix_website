@@ -9,11 +9,8 @@
 
 @media (min-width: 1281px) and (max-width: 1440px) {
     .main-title {
-        font-size: 62px;
-    }
-
-    .main-title-under {
-        font-size: 42px;
+        font-size: 86px;
+        line-height: 80px;
     }
 
     .title>p {
