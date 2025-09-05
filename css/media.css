@@ -140,7 +140,7 @@
 
     .description-text,
     .about-text,
-    .third-section-container-text p {
+    .third-section-product-text {
         font-size: 12px;
     }
 
@@ -191,5 +191,9 @@
 
     .gallery-main .swiper-slide img {
         object-fit: contain;
+    }
+
+    .tab-img, .info-card {
+        width: 100%;
     }
 }

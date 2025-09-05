@@ -1411,6 +1411,7 @@ img {
   position: relative;
   background-color: #222222;
   padding: 50px;
+  border-radius: 4px;
 }
 
 .screen:after {
@@ -1780,7 +1781,8 @@ a.header-menu-item-accent::after {
   text-transform: uppercase;
 }
 
-.description-text, .third-section-container-text p {
+.description-text,
+.third-section-product-text {
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1798,6 +1800,13 @@ a.header-menu-item-accent::after {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  color: #FFFFFF;
+  background-color: inherit;
+  border-radius: 4px;
+}
+
+.btn-yellow:hover {
+  border: 2px solid #FFFFFF;
   color: #FFFFFF;
   background-color: inherit;
 }
@@ -1870,20 +1879,25 @@ a.header-menu-item-accent::after {
   gap: 20px;
 }
 
-.third-section-btn-container p {
+.third-section-img img {
+  width: 100%;
+}
+
+
+.third-section-btn-container-text {
   opacity: 1;
-  padding: 16px 32px;
-  background-color: #373737;
+  padding: 18px 32px;
+  /* background-color: #373737; */
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   text-align: center;
-  border: 0 solid #373737;
-}
-
-.third-section-img img {
-  width: 100%;
+  /* border: 0 solid #373737; */
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: inherit;
+  border: 2px solid #FFFFFF;
 }
 
 .btn-yellow {
@@ -1897,6 +1911,44 @@ a.header-menu-item-accent::after {
   opacity: 1;
   padding: 16px 32px;
   border: 0 solid #FCC800;
+  border-radius: 4px;
+}
+
+.btn-white:hover {
+  border: 2px solid #FCC800;
+  background-color: #FCC800;
+  color: #222222;
+  transition: .3s;
+}
+
+.advantages_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem 0;
+}
+
+.advantages_card {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages_green-text {
+    font-family: "Bebas Neue", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+    color: #FCC800;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.0px;
+    color: #FFFFFF;
 }
 
 /************ tabs ************/
@@ -2083,6 +2135,7 @@ video {
 
 .footer-container iframe {
   width: 65%;
+  border-radius: 4px;
 }
 
 .footer-contacts-container {
@@ -2208,6 +2261,9 @@ a:hover {
 
 .about {
   background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .about-container {
@@ -2248,6 +2304,54 @@ a:hover {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2.625rem;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+  padding: 2.188rem;
+  border-radius: 4px;
+  width: 48%;
+  gap: 1.25rem;
+  transform: translateY(0);
+  transition: all 0.4s;
+}
+
+.insurance-card-group {
+  display: flex;
+  gap: 1.563rem;
+}
+
+.insurance-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.insurance-img {
+  width: 26px;
+}
+
+.text-24 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.text-16 {
+  color: #333;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 /************ accordions ************/
@@ -2524,4 +2628,8 @@ a:hover {
 
 .filter-controls-btn--active:hover {
   background: #0056b3;
+}
+
+p {
+  margin: 0 !important;
 }
