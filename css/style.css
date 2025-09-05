@@ -920,7 +920,6 @@ h6 {
 }
 
 .fourth-section {
-  padding: 120px 0;
   background: url(../images/webp/form-bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -966,7 +965,7 @@ h6 {
 } */
 
 .filter ul {
-  padding: 80px 30px 30px;
+  padding: 0 30px 30px;
   margin: 0;
   list-style: none;
 }
@@ -1586,7 +1585,7 @@ img {
 .third-section,
 .gallery,
 .fourth-section {
-  padding: 94px 0 !important;
+  padding: 94px 30px;
 }
 
 /************ header ************/
@@ -1757,7 +1756,6 @@ a.header-menu-item-accent::after {
 
 .description {
   background-color: #222222;
-  padding: 40px 20px;
   display: flex;
   justify-content: flex-start;
 }
@@ -1782,7 +1780,7 @@ a.header-menu-item-accent::after {
   text-transform: uppercase;
 }
 
-.description-text {
+.description-text, .third-section-container-text p {
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2073,7 +2071,7 @@ video {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding: 100px 20px 40px;
+  padding: 100px 30px 40px;
   background-color: #222222;
 }
 
@@ -2209,8 +2207,7 @@ a:hover {
 /******** about *********/
 
 .about {
-  background-color: #303030;
-  padding: 40px 20px;
+  background-color: #222222;
 }
 
 .about-container {
@@ -2375,7 +2372,6 @@ a:hover {
 /************ gallery ************/
 .gallery {
   background-color: #303030;
-  padding: 40px 20px;
 }
 
 .gallery-container {

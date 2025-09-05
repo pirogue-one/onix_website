@@ -55,6 +55,9 @@
         font-size: 12px;
     }
 
+    .about-container {
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -78,11 +81,6 @@
     .about-title {
         font-size: 28px;
     }
-
-    /* .description-header,
-    .third-section-container-text>p {
-        font-size: 14px;
-    } */
 
     .third-section-btn-container {
         flex-direction: column;
@@ -115,10 +113,6 @@
         font-size: 1.2rem;
     }
 
-    .fourth-section {
-        padding: 60px 0;
-    }
-
     .form {
         padding: 30px;
     }
@@ -145,7 +139,8 @@
     }
 
     .description-text,
-    .about-text {
+    .about-text,
+    .third-section-container-text p {
         font-size: 12px;
     }
 
@@ -154,7 +149,7 @@
     }
 
     .filter ul {
-        padding: 30px 30px 0;
+        padding: 0 30px;
     }
 
     .btn-white {
@@ -168,4 +163,33 @@
         width: 100%;
     }
 
+    .description,
+    .about,
+    .second-section,
+    .third-section,
+    .gallery,
+    .fourth-section {
+        padding: 44px 30px;
+    }
+
+    .description-box {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .description-text-box, .third-section-img {
+        width: 100%;
+    }
+
+    .third-section-container-text {
+        gap: 18px;
+    }
+
+    .third-section-card, .tabcontent {
+        gap: 40px;
+    }
+
+    .gallery-main .swiper-slide img {
+        object-fit: contain;
+    }
 }
