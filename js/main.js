@@ -25,7 +25,10 @@
         $('.filter-controls-btn').removeClass('filter-controls-btn--active');
         // Add active class to clicked button
         $(this).addClass('filter-controls-btn--active');
-        
+        if (window.galleryMain && window.galleryThumbs) {
+            window.galleryMain.slideTo(0);
+            window.galleryThumbs.slideTo(0);
+        };
         if (filter === 'all') {
             // Show all slides
             $('.swiper-slide').show();
