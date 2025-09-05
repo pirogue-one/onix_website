@@ -1,0 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+@font-face {
+  font-family: "Inter";
+  src: url(../dist/fonts/Inter-Regular.ttf) format("ttf"), url(../dist/fonts/Inter-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url(../dist/fonts/BebasNeue_Bold.ttf) format("ttf"), url(../dist/fonts/BebasNeue_Bold.woff2) format("woff2");
+}
