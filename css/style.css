@@ -1977,7 +1977,8 @@ a.header-menu-item-accent::after {
   width: 40%;
 }
 
-.my-slides-wrapper, .my-slides-2-wrapper {
+.my-slides-wrapper,
+.my-slides-2-wrapper {
   max-width: 900px;
   align-self: center;
 }
@@ -2257,8 +2258,9 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  padding: 40px 20px;
-  max-width: 1200px;
+  /* padding: 40px 20px; */
+  /* max-width: 1200px; */
+  width: 100%;
   margin: 0 auto;
 }
 
