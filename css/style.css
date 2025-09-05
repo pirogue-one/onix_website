@@ -654,8 +654,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  margin: 0 !important;
 }
 
 /* ==========================================================================
@@ -880,7 +879,7 @@ h6 {
   color: #333333;
   position: relative;
   z-index: 18;
-  padding: 30px 0;
+  padding: 40px 0;
   /* margin-top: -80px; */
   background: url(../images/webp/bg2.webp) no-repeat top center;
   background-size: cover;
@@ -899,7 +898,7 @@ h6 {
   color: #fff;
   position: relative;
   /* z-index: 19; */
-  padding: 80px 30px 20px;
+  padding: 40px 20px;
   /* margin-top: -30px;
   background: url(../images/webp/bg3.webp) no-repeat top center;
   background-size: cover; */
@@ -1759,7 +1758,7 @@ a.header-menu-item-accent::after {
 
 .description {
   background-color: #222222;
-  padding: 30px;
+  padding: 40px 20px;
   display: flex;
   justify-content: flex-start;
 }
@@ -1767,8 +1766,11 @@ a.header-menu-item-accent::after {
 .description-container {
   display: flex;
   gap: 20px;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.description-container img {
   width: 100%;
 }
 
@@ -2046,7 +2048,7 @@ video {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding: 100px 30px 40px;
+  padding: 100px 20px 40px;
   background-color: #222222;
 }
 
@@ -2183,13 +2185,16 @@ a:hover {
 
 .about {
   background-color: #303030;
-  padding: 30px;
+  padding: 40px 20px;
 }
 
 .about-container {
   display: flex;
-  flex-direction: column;
   gap: 3.75rem;
+}
+
+.about-container img {
+  width: 50%;
 }
 
 .about-title {
@@ -2205,10 +2210,6 @@ a:hover {
   width: 100%;
   display: flex;
   gap: 30px;
-}
-
-.skill-title_container img {
-  width: 50%;
 }
 
 .text-container {
