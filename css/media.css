@@ -152,7 +152,9 @@
         padding: 0 30px;
     }
 
-    .btn-white {
+    .btn-white,
+    .third-section-btn-container-text,
+    .btn-yellow {
         font-size: 14px;
         line-height: 18px;
         padding: 9px 26px;
@@ -177,7 +179,8 @@
         gap: 18px;
     }
 
-    .description-text-box, .third-section-img {
+    .description-text-box,
+    .third-section-img {
         width: 100%;
     }
 
@@ -185,7 +188,8 @@
         gap: 18px;
     }
 
-    .third-section-card, .tabcontent {
+    .third-section-card,
+    .tabcontent {
         gap: 40px;
     }
 
@@ -193,7 +197,8 @@
         object-fit: contain;
     }
 
-    .tab-img, .info-card {
+    .tab-img,
+    .info-card {
         width: 100%;
     }
 }
