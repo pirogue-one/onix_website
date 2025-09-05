@@ -897,10 +897,9 @@ h6 {
   position: relative;
   /* z-index: 19; */
   padding: 40px 20px;
-  /* margin-top: -30px;
-  background: url(../images/webp/bg3.webp) no-repeat top center;
-  background-size: cover; */
-  background-color: #222222;
+  margin-top: -30px;
+  background: linear-gradient(rgba(86, 86, 86, 0.5), rgba(86, 86, 86, 0.5)), url(../images/carbon_pattern.png) repeat;
+  background-size: 12%;
 }
 
 .third-section .fas {
