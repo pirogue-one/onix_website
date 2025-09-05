@@ -201,4 +201,12 @@
     .info-card {
         width: 100%;
     }
+
+    .advantages_yellow-text {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
 }
