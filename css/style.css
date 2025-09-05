@@ -1923,6 +1923,7 @@ a.header-menu-item-accent::after {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2.5rem 0;
+      width: 100%;
 }
 
 .advantages_card {
@@ -2639,4 +2640,8 @@ p {
 
 .filter-controls-btn--active:hover {
   background: #FCC800;
+}
+
+.text-yellow {
+  color: #FCC800;
 }
