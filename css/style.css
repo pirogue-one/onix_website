@@ -1957,7 +1957,7 @@ a.header-menu-item-accent::after {
 .tabcontent {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 90px;
 }
 
 .description-box {
@@ -2265,6 +2265,9 @@ a:hover {
 }
 
 .accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   flex: 1;
   min-width: 0;
 }
