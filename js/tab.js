@@ -8,7 +8,7 @@ function openBoat(evt, boatName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
     }
-    document.getElementById(boatName).style.display = "block";
+    document.getElementById(boatName).style.display = "flex";
     evt.currentTarget.className += " tab-active";
 	
 }

@@ -896,11 +896,11 @@ h6 {
   color: #fff;
   position: relative;
   /* z-index: 19; */
-  padding: 40px 20px;
-  margin-top: -30px;
-  background: linear-gradient(rgba(86, 86, 86, 0.5), rgba(86, 86, 86, 0.5)), url(../images/carbon_pattern.png) repeat;
-  background-size: 12%;
+  margin-top: -16px;
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(86, 86, 86, 0.6)), url(../images/carbon_pattern.png) repeat;
+  background-size: 10%;
 }
+
 
 .third-section .fas {
   width: 24px;
@@ -1142,14 +1142,6 @@ button.main-button,
 .video-featured .video-holder iframe {
   width: 100%;
   height: 100%;
-}
-
-.promotion-s {
-  background: url(../images/webp/promotionbg.webp) no-repeat top center;
-  background-size: cover;
-  padding: 120px 0 120px 0;
-  margin-top: -90px;
-  margin-bottom: 40px;
 }
 
 .product-left {
@@ -1588,6 +1580,15 @@ img {
   margin: 0 auto;
 }
 
+.description,
+.about,
+.second-section,
+.third-section,
+.gallery,
+.fourth-section {
+  padding: 94px 0 !important;
+}
+
 /************ header ************/
 .logo {
   width: 120px;
@@ -1803,12 +1804,6 @@ a.header-menu-item-accent::after {
   background-color: inherit;
 }
 
-
-
-.second-section {
-  background-color: #222222;
-}
-
 .second-container {
   display: flex;
   justify-content: space-evenly;
@@ -1817,12 +1812,14 @@ a.header-menu-item-accent::after {
 .third-section-card {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .characteristics-container {
   display: flex;
   justify-content: space-between;
-  padding: 80px 0;
+  padding-bottom: 14px;
 }
 
 .characteristics-container ul li {
@@ -1853,6 +1850,7 @@ a.header-menu-item-accent::after {
   font-size: 18px;
   line-height: 21.45px;
   color: #FFC800;
+  margin: 0;
 }
 
 .third-section-container-text {
@@ -1860,13 +1858,13 @@ a.header-menu-item-accent::after {
   flex-direction: column;
   gap: 32px;
   padding: 20px 0;
-  width: 80%;
 }
 
 .third-section-container-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
+  width: 100%;
 }
 
 .third-section-btn-container {
@@ -1954,6 +1952,34 @@ a.header-menu-item-accent::after {
   font-family: "Bebas Neue", "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
+}
+
+.tabcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.description-box {
+  display: flex;
+  gap: 60px;
+}
+
+.title-box {
+  width: fit-content;
+}
+
+.description-text-box {
+  width: 60%;
+}
+
+.third-section-img {
+  width: 40%;
+}
+
+.my-slides-wrapper, .my-slides-2-wrapper {
+  max-width: 900px;
+  align-self: center;
 }
 
 /* .tab-active>h4 {
