@@ -97,9 +97,9 @@ textarea {
   clear: both;
 }
 
-.clearfix {
+/* .clearfix {
   *zoom: 1;
-}
+} */
 
 .text-muted {
   color: #848b8f;
@@ -254,9 +254,9 @@ html[xmlns] .slides {
 }
 
 /* Direction Nav */
-.flex-direction-nav {
+/* .flex-direction-nav {
   *height: 0;
-}
+} */
 
 .flex-direction-nav a {
   text-decoration: none;
@@ -360,7 +360,7 @@ html[xmlns] .slides {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  /* *display: inline; */
 }
 
 .flex-control-paging li a {
@@ -485,8 +485,8 @@ body.blurred>* {
   margin: 0 auto;
   max-width: 70%;
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  /* *display: inline;
+  *zoom: 1; */
   padding: 10px;
   color: #fff;
   font-size: 12px;
@@ -707,8 +707,6 @@ h6 {
 
 .navbar-default .navbar-nav .phone {
   background: #fff;
-  margin-right;
-  0 !Important;
 }
 
 .navbar-default .navbar-nav>li>a {
