@@ -1714,6 +1714,7 @@ a.header-menu-item-accent::after {
   align-items: center;
   gap: 20px;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .swiper-btn {
@@ -1724,7 +1725,7 @@ a.header-menu-item-accent::after {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 92px;
-  line-height: 90%;
+  line-height: 75%;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1733,7 +1734,7 @@ a.header-menu-item-accent::after {
 .main-title-under {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
-  font-size: 66px;
+  font-size: 56px;
   line-height: 110.00000000000001%;
   text-align: center;
   text-transform: uppercase;
