@@ -268,21 +268,24 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 36%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
-  border-radius: 0 4px 4px 0;
   user-select: none;
   -webkit-user-select: none;
 }
 
 .next {
-  right: 14px;
-  border-radius:4px 0 0 4px;
+  right: -50px;
+  border-radius:0  4px 4px 0;
+}
+
+.prev {
+  left: -50px;
+  border-radius: 4px 0 0 4px;
 }
 
 .prev:hover,
@@ -983,6 +986,7 @@ a.header-menu-item-accent::after {
 .my-slides-2-wrapper {
   max-width: 900px;
   align-self: center;
+  position: relative;
 }
 
 .tab-active>h4 {
@@ -1254,6 +1258,7 @@ a:hover {
 .about-container {
   display: flex;
   gap: 3.75rem;
+  align-items: flex-start;
 }
 
 .about-container img {
