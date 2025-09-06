@@ -375,18 +375,6 @@ html[xmlns] .slides {
   cursor: default;
 }
 
-@media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {
-    opacity: 1;
-    left: 10px;
-  }
-
-  .flex-direction-nav .flex-next {
-    opacity: 1;
-    right: 10px;
-  }
-}
-
 #lightbox {
   cursor: pointer;
   position: fixed;
@@ -486,90 +474,6 @@ body.blurred>* {
   left: 10px;
   top: 48%;
   background-image: url('../images/previous.png');
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-     * Don't show links for images, or javascript/internal links
-     */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  @page {
-    margin: 0.5cm;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-
-  h3:before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    width: 11px;
-    top: 1px;
-    height: 32px;
-    -webkit-transform: skewX(-20deg);
-    -ms-transform: skewX(-20deg);
-    transform: skewX(-20deg);
-    background: #ffc800;
-  }
 }
 
 /* ==========================================================================
@@ -716,12 +620,6 @@ h6 {
   color: #fff;
   padding-top: 32px;
   padding-bottom: 25px;
-}
-
-@media screen and (max-height: 300px) {
-  ul {
-    margin-top: 40px;
-  }
 }
 
 .navbar-default .navbar-brand:hover {
@@ -1227,10 +1125,6 @@ button.main-button,
   width: 32px;
 }
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
 .tab {
   overflow: hidden;
   /* border: 1px solid #ccc;
@@ -1661,13 +1555,6 @@ a.header-menu-item-accent::after {
   max-height: 100%;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    height: calc(100vh - 60px);
-    /* Smaller header height on mobile */
-    min-height: 300px;
-  }
-}
 
 /* .hero-img {
   width: 100%;
@@ -2077,10 +1964,16 @@ video {
   align-items: flex-end;
 }
 
-label span.checkbox-label {
+label span.checkbox-label,
+a.form-checkbox-link {
   font-size: 10px;
   line-height: 13px;
   color: #4b4b4b;
+}
+
+a.form-checkbox-link {
+  text-decoration: underline !important;
+  color: #6a6a6a;
 }
 
 form input[type="text"]:focus,
@@ -2422,45 +2315,6 @@ a:hover {
   border-bottom: none;
 }
 
-@media (max-width: 768px) {
-  .accordions-wrapper {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .screen-body {
-    flex-direction: column;
-  }
-
-  .screen-body-item.left {
-    margin-bottom: 30px;
-  }
-
-  .app-title {
-    flex-direction: row;
-  }
-
-  .app-title span {
-    margin-right: 10px;
-  }
-
-  .app-title:after {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .screen-body {
-    padding: 40px;
-  }
-
-  .screen-body-item {
-    padding: 0;
-  }
-}
-
 /************ gallery ************/
 .gallery {
   background-color: #303030;
@@ -2552,25 +2406,6 @@ a:hover {
   font-weight: bold;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .gallery-main {
-    height: 300px;
-  }
-
-  .gallery-thumbs {
-    height: 80px;
-  }
-
-  .gallery-thumbs .swiper-slide {
-    width: 80px;
-    height: 80px;
-  }
-
-  .gallery-container {
-    padding: 20px 10px;
-  }
-}
 
 /* Filter styles */
 .filter {
@@ -2635,3 +2470,138 @@ p {
 .text-yellow {
   color: #FCC800;
 }
+
+/************* Privacy Policy styles ***********/
+.privacy-policy {
+    background-color: #222222;
+    padding: 94px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.privacy-policy-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.privacy-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.privacy-title {
+    font-family: "Bebas Neue", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.privacy-subtitle {
+    font-family: "Inter", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FCC800;
+    margin: 0;
+}
+
+.privacy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.privacy-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    border-left: 4px solid #FCC800;
+}
+
+.privacy-section-title {
+    font-family: "Bebas Neue", "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.privacy-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.privacy-text p {
+    font-family: "Inter", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.privacy-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.privacy-list li {
+    font-family: "Inter", "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.privacy-list li::before {
+    content: "•";
+    color: #FCC800;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+}
+
+.privacy-contacts {
+    background: rgba(252, 200, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.privacy-contacts p {
+    margin-bottom: 10px;
+}
+
+.privacy-contacts p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-link {
+    color: #FCC800;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.privacy-link:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.privacy-update {
+    font-style: italic;
+    color: #FCC800 !important;
+    margin-top: 20px !important;
+}
+
