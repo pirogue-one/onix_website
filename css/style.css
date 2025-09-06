@@ -2296,6 +2296,9 @@ a:hover {
   font-weight: 600;
   color: #ffffff;
 }
+.panel {
+border-left: 2px solid #FCC800;
+}
 
 .panel-title a {
   text-decoration: none;
