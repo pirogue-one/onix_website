@@ -422,6 +422,10 @@
         height: 30px;
     }
 
+    .footer-contacts-container-group {
+        gap: 3rem;
+    }
+
 }
 
 @media screen and (max-width: 600px) {

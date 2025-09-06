@@ -1451,7 +1451,7 @@ li {
 .header {
   background-color: #222222;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
 }
 
@@ -2057,6 +2057,7 @@ form input[type="password"]:focus {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  align-items: flex-start;
 }
 
 hr {
