@@ -2267,28 +2267,34 @@ a:hover {
 }
 
 .panel {
-  border: 1px solid #ddd;
+  border: 1px solid #444;
   border-radius: 4px;
   margin-bottom: 10px;
-  background-color: #fff;
+  background-color: #333;
 }
 
 .panel-heading {
   padding: 10px 15px;
-  border-bottom: 1px solid #ddd;
-  background-color: #f5f5f5;
+  border-bottom: 1px solid #444;
+  background-color: #2e2e2e;
   cursor: pointer;
 }
 
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #343434;
+  border-color: #343434;
+}
+
 .panel-heading:hover {
-  background-color: #e7e7e7;
+  background-color: #3a3a3a;
 }
 
 .panel-title {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: #ffffff;
 }
 
 .panel-title a {
@@ -2304,7 +2310,7 @@ a:hover {
 
 .panel-body {
   padding: 15px;
-  background-color: #fff;
+  background-color: #333;
 }
 
 .panel-body ul {
@@ -2315,8 +2321,8 @@ a:hover {
 .panel-body li {
   margin-bottom: 0;
   padding: 8px 0;
-  color: #555;
-  border-bottom: 1px solid #e0e0e0;
+  color: #ddd;
+  border-bottom: 1px solid #444;
 }
 
 .panel-body li:last-child {
