@@ -148,6 +148,27 @@
         flex-wrap: wrap;
     }
 
+    #menu {
+        display: flex;
+    }
+
+    .header-menu-desc {
+        display: none;
+    }
+
+    .header-menu-mob {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 860px) {
@@ -225,14 +246,6 @@
 
     .form {
         padding: 30px;
-    }
-
-    #menu {
-        display: flex;
-    }
-
-    .header-menu-desc {
-        display: none;
     }
 
     .skill-title_container {

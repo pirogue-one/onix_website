@@ -306,6 +306,16 @@
             }
         });
 
+             openButtons.forEach(function (button) {
+            if (button.textContent.includes('Заказать звонок') || button.textContent.includes('Связаться')) {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    popup.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                });
+            }
+        });
+
         // Close popup when clicking close button
         if (closeBtn) {
             closeBtn.addEventListener('click', function () {
