@@ -1184,16 +1184,53 @@
                             </div>
                         </div>
                         <label><input class="form-checkbox" type="checkbox" name="checkbox"
-                                value="Я подтверждаю, что ознакомлен(а) c представленными ниже документами и выражаю своё согласие на обработку моих персональных данных в соответствии с ними"><span
+                                value="checked" required><span
                                 class="checkbox-label">Нажимая кнопку «ОТПРАВИТЬ», я даю свое согласие на обработку моих
                                 персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
-                                персональных данных», на условиях и для целей, определенных в <a class="form-checkbox-link" href="privacy_policy.html#privacy-agreement">Согласии на обработку
-                                персональных данных</a></span></label>
+                                персональных данных», на условиях и для целей, определенных в <a
+                                    class="form-checkbox-link" href="privacy_policy.html#privacy-agreement">Согласии на
+                                    обработку
+                                    персональных данных</a></span></label>
                     </form>
                     </h3>
                 </div>
             </div>
         </section>
+
+        <!-- Popup Form for "Заказать звонок" -->
+        <div id="callBackPopup" class="popup-overlay">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h3>Заказать звонок</h3>
+                    <button class="popup-close" id="closePopup">&times;</button>
+                </div>
+                <div class="popup-form">
+                    <form class="screen-body-item">
+                        <div class="app-form">
+                            <div class="app-form-group">
+                                <input class="app-form-control" type="name" placeholder="ИМЯ" required>
+                            </div>
+                            <div class="app-form-group">
+                                <input class="app-form-control" type="tel" placeholder="+7 999 999 99 99"
+                                    id="popup-phone-input" required>
+                            </div>
+                            <div class="app-form-group buttons">
+                                <button class="app-form-button">ЗАКАЗАТЬ ЗВОНОК</button>
+                            </div>
+                        </div>
+                        <label><input class="form-checkbox" type="checkbox" name="checkbox"
+                                value="checked" required><span
+                                class="checkbox-label">Нажимая кнопку «ЗАКАЗАТЬ ЗВОНОК», я даю свое согласие на обработку моих
+                                персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О
+                                персональных данных», на условиях и для целей, определенных в <a
+                                    class="form-checkbox-link" href="privacy_policy.html#privacy-agreement">Согласии на
+                                    обработку
+                                    персональных данных</a></span></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- <section class="contact" id="contact">
             <div class="contacts-container content-wrapper">
                 <div class="contacts-container-group">
@@ -1301,6 +1338,12 @@
                 <p class="footer-info-text">©&nbsp;2025 Все права защищены.</p>
                 <a href="privacy_policy.html" class="footer-info-text">Политика конфиденциальности</a>
                 <!-- </div> -->
+            </div>
+            <div class="footer-text-container">
+                <p class="footer-info-text">Обработка персональных данных осуществляется в соответствии с ФЗ от
+                    27.07.2006 N 152-ФЗ "О персональных данных". Вся информация на этом сайте носит исключительно
+                    информационный характер и ни при каких условиях не является публичной офертой, определяемой
+                    положениями Статьи 437 (2) Гражданского кодекса РФ.</p>
             </div>
         </div>
     </footer>

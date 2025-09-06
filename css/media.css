@@ -386,6 +386,21 @@
         min-height: 300px;
     }
 
+    .popup-content {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .popup-header h3 {
+        font-size: 24px;
+    }
+    
+    .popup-close {
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
