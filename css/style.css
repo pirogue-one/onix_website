@@ -7,6 +7,7 @@
 
 body {
   background-color: #222222;
+  line-height: unset;
 }
 
 ::-moz-selection {
@@ -90,39 +91,6 @@ textarea {
 
 .text-muted {
   color: #848b8f;
-}
-
-/* ==========================================================================
-    Forms
-   ========================================================================== */
-form input[type="text"],
-form input[type="email"],
-form input[type="number"],
-form input[type="password"] {
-  background: #fff;
-  color: #777;
-  border: 1px solid #dddddd;
-  padding: 12px 15px;
-  width: 100%;
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form input[type="number"]:focus,
-form input[type="password"]:focus {
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  border-color: #f57e37;
-}
-
-label {
-  font-weight: normal;
 }
 
 /*
@@ -1397,7 +1365,7 @@ img {
 .form {
   position: relative;
   background-color: #222222;
-  padding: 50px;
+  padding: 45px;
   border-radius: 4px;
 }
 
@@ -1923,7 +1891,7 @@ a.header-menu-item-accent::after {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2.5rem 0;
-      width: 100%;
+  width: 100%;
 }
 
 .advantages_card {
@@ -2107,6 +2075,28 @@ video {
 
 .footer-contacts-container-policy {
   align-items: flex-end;
+}
+
+label span.checkbox-label {
+  font-size: 10px;
+  line-height: 13px;
+  color: #4b4b4b;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="password"]:focus {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #f57e37;
+}
+
+.form-checkbox[type=checkbox] {
+  margin: 0 4px 0 0;
+  transform: translateY(22%);
 }
 
 
