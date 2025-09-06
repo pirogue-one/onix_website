@@ -1168,6 +1168,7 @@ hr {
 
 .contact-us-social {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -1263,6 +1264,7 @@ a:hover {
 
 .about-container img {
   width: 50%;
+  border-radius: 4px;
 }
 
 .about-title {

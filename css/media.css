@@ -185,6 +185,16 @@
     .third-section-btn-container-text {
         font-size: 22px;
     }
+
+    section:not(.hero) {
+        margin: 0 0;
+    }
+
+    .my-slides-wrapper a,
+    .my-slides-2-wrapper a {
+        display: none;
+    }
+
 }
 
 @media (max-width: 790px) {
@@ -213,7 +223,6 @@
     }
 
     .third-section-btn-container {
-        flex-direction: column;
         gap: 20px;
     }
 
@@ -242,6 +251,7 @@
 
     .tablinks h4 {
         font-size: 1.2rem;
+        padding-top: 10px;
     }
 
     .form {
