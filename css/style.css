@@ -729,7 +729,7 @@ h6 {
 .second-section {
   color: #333333;
   position: relative;
-  z-index: 18;
+  z-index: 4;
   padding: 40px 0;
   /* margin-top: -80px; */
   background: url(../images/webp/bg2.webp) no-repeat top center;

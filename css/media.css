@@ -252,14 +252,9 @@
         flex-direction: column-reverse;
     }
 
-    .about-container,
-    .text-container {
-        gap: 10px;
-    }
-
-    .about-container {
+    /* .about-container {
         flex-direction: column-reverse;
-    }
+    } */
 
     .description-text,
     .about-text,
@@ -309,6 +304,7 @@
 
     .third-section-container-text {
         gap: 18px;
+        align-items: flex-start;
     }
 
     .third-section-card,
