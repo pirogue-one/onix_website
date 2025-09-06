@@ -1450,6 +1450,9 @@ li {
 
 .header {
   background-color: #222222;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .header-container {
@@ -1470,7 +1473,8 @@ li {
   cursor: pointer;
 }
 
-a.header-menu-item::after, .app-form-button::after {
+a.header-menu-item::after,
+.app-form-button::after {
   content: "";
   display: block;
   position: absolute;
@@ -1485,11 +1489,13 @@ a.header-menu-item::after, .app-form-button::after {
   /* Время эффекта */
   cursor: pointer;
 }
+
 .app-form-button::after {
   background-color: #FFFFFF;
 }
 
-a.header-menu-item:hover::after, .app-form-button:hover::after {
+a.header-menu-item:hover::after,
+.app-form-button:hover::after {
   content: "";
   width: 100%;
   display: block;
@@ -1504,6 +1510,7 @@ a.header-menu-item:hover::after, .app-form-button:hover::after {
   /* Время эффекта */
   cursor: pointer;
 }
+
 .app-form-button:hover::after {
   background-color: #FFFFFF;
 }
@@ -1588,7 +1595,7 @@ a.header-menu-item-accent::after {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
   font-size: 92px;
-  line-height: 75%;
+  line-height: 110%;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1738,7 +1745,8 @@ a.header-menu-item-accent::after {
 
 .third-section-btn-container {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  align-items: center;
 }
 
 .third-section-img img {
@@ -1748,7 +1756,6 @@ a.header-menu-item-accent::after {
 
 .third-section-btn-container-text {
   opacity: 1;
-  padding: 18px 32px;
   font-family: "Inter", "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -1758,6 +1765,7 @@ a.header-menu-item-accent::after {
   color: #FCC800;
   background-color: inherit;
   border: 0 solid #FFFFFF;
+  text-align: left;
 }
 
 .btn-yellow {
@@ -2296,8 +2304,9 @@ a:hover {
   font-weight: 600;
   color: #ffffff;
 }
+
 .panel {
-border-left: 2px solid #FCC800;
+  border-left: 2px solid #FCC800;
 }
 
 .panel-title a {
@@ -2490,204 +2499,207 @@ p {
 
 /************ Popup Form ************/
 .popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup-overlay.active {
-    display: flex;
+  display: flex;
 }
 
 .popup-content {
-    background: #222222;
-    padding: 40px;
-    border-radius: 15px;
-    max-width: 500px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  background: #222222;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #FCC800;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #FCC800;
 }
 
 .popup-header h3 {
-    font-family: "Bebas Neue", "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 120%;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin: 0;
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .popup-close {
-    background: none;
-    border: none;
-    color: #FCC800;
-    font-size: 32px;
-    cursor: pointer;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 0.3s ease;
+  background: none;
+  border: none;
+  color: #FCC800;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
 }
 
 .popup-close:hover {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 
 /************* Privacy Policy styles ***********/
 .privacy-policy {
-    background-color: #222222;
-    padding: 94px 30px;
-    min-height: calc(100vh - 200px);
+  background-color: #222222;
+  padding: 94px 30px;
+  min-height: calc(100vh - 200px);
 }
 
 .privacy-policy-container {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .privacy-header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .privacy-title {
-    font-family: "Bebas Neue", "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .privacy-subtitle {
-    font-family: "Inter", "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #FCC800;
-    margin: 0;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FCC800;
+  margin: 0;
 }
 
 .privacy-content {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .privacy-section {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
-    border-radius: 10px;
-    border-left: 4px solid #FCC800;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 10px;
+  border-left: 4px solid #FCC800;
 }
 
 .privacy-section-title {
-    font-family: "Bebas Neue", "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 120%;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin-bottom: 25px;
+  font-family: "Bebas Neue", "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .privacy-text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .privacy-text p {
-    font-family: "Inter", "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin: 0;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
 }
 
 .privacy-list {
-    margin: 0;
-    padding-left: 20px;
-    list-style: none;
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
 }
 
 .privacy-list li {
-    font-family: "Inter", "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    margin-bottom: 10px;
-    position: relative;
+  font-family: "Inter", "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .privacy-list li::before {
-    content: "•";
-    color: #FCC800;
-    font-weight: bold;
-    position: absolute;
-    left: -20px;
+  content: "•";
+  color: #FCC800;
+  font-weight: bold;
+  position: absolute;
+  left: -20px;
 }
 
 .privacy-contacts {
-    background: rgba(252, 200, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 15px;
+  background: rgba(252, 200, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
 }
 
 .privacy-contacts p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .privacy-contacts p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .privacy-link {
-    color: #FCC800;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  color: #FCC800;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .privacy-link:hover {
-    color: #FFFFFF;
-    text-decoration: underline;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .privacy-update {
-    font-style: italic;
-    color: #FCC800 !important;
-    margin-top: 20px !important;
+  font-style: italic;
+  color: #FCC800 !important;
+  margin-top: 20px !important;
 }
 
+.text-white {
+  color: #FFFFFF;
+}

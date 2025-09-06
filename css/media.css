@@ -105,7 +105,6 @@
 @media (max-width: 1280px) {
     .main-title {
         font-size: 54px;
-        line-height: 70%;
     }
 
     .main-title-under {
@@ -161,6 +160,10 @@
         opacity: 1;
         right: 10px;
     }
+
+    .third-section-btn-container-text {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 790px) {
@@ -190,6 +193,7 @@
 
     .third-section-btn-container {
         flex-direction: column;
+        gap: 20px;
     }
 
     .product-card {
@@ -255,11 +259,15 @@
     }
 
     .btn-white,
-    .third-section-btn-container-text,
     .btn-yellow {
         font-size: 14px;
         line-height: 18px;
         padding: 9px 26px;
+    }
+
+    .third-section-btn-container-text {
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .description-container img,
@@ -390,11 +398,11 @@
         padding: 30px 20px;
         margin: 20px;
     }
-    
+
     .popup-header h3 {
         font-size: 24px;
     }
-    
+
     .popup-close {
         font-size: 24px;
         width: 30px;
