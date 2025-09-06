@@ -204,8 +204,89 @@
         }
     });
 
+    // Phone mask functionality
+    function initPhoneMask() {
+        const phoneInput = document.getElementById('phone-input');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, ''); // Remove all non-digits
+                
+                // If starts with 8, replace with 7
+                if (value.startsWith('8')) {
+                    value = '7' + value.slice(1);
+                }
+                
+                // If doesn't start with 7, add 7
+                if (!value.startsWith('7') && value.length > 0) {
+                    value = '7' + value;
+                }
+                
+                // Limit to 11 digits (7 + 10 digits)
+                if (value.length > 11) {
+                    value = value.slice(0, 11);
+                }
+                
+                // Format the phone number
+                let formattedValue = '';
+                if (value.length > 0) {
+                    formattedValue = '+7';
+                    if (value.length > 1) {
+                        formattedValue += ' ' + value.slice(1, 4);
+                    }
+                    if (value.length > 4) {
+                        formattedValue += ' ' + value.slice(4, 7);
+                    }
+                    if (value.length > 7) {
+                        formattedValue += ' ' + value.slice(7, 9);
+                    }
+                    if (value.length > 9) {
+                        formattedValue += ' ' + value.slice(9, 11);
+                    }
+                }
+                
+                e.target.value = formattedValue;
+            });
+            
+            // Handle backspace and delete
+            phoneInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Backspace' && e.target.value.length <= 2) {
+                    e.target.value = '';
+                }
+            });
+        }
+    }
+
+    // Clear placeholder on focus functionality
+    function initPlaceholderClear() {
+        const formInputs = document.querySelectorAll('.app-form-control');
+        
+        formInputs.forEach(function(input) {
+            const originalPlaceholder = input.placeholder;
+            
+            // Clear placeholder on focus
+            input.addEventListener('focus', function() {
+                if (this.value === '') {
+                    this.placeholder = '';
+                }
+            });
+            
+            // Restore placeholder on blur if input is empty
+            input.addEventListener('blur', function() {
+                if (this.value === '') {
+                    this.placeholder = originalPlaceholder;
+                }
+            });
+        });
+    }
+
     // Initialize gallery when DOM is ready and all scripts are loaded
     $(document).ready(function() {
+        // Initialize phone mask
+        initPhoneMask();
+        
+        // Initialize placeholder clear functionality
+        initPlaceholderClear();
+        
         // Wait a bit to ensure all scripts are loaded
         setTimeout(loadGalleryData, 100);
     });
