@@ -82,6 +82,11 @@
     }
 }
 
+@media (max-width: 1980px) {
+    .bg-form  {
+    background: url(../images/webp/form_bg.webp) no-repeat top 41% center;
+}
+
 @media (min-width: 1441px) {
 
     section:not(.hero),
