@@ -83,9 +83,11 @@
 }
 
 @media (max-width: 1980px) {
-    .bg-form  {
-    background: url(../images/webp/form_bg.webp) no-repeat top 41% center;
+    .bg-form {
+        background: url(../images/webp/form_bg.webp) no-repeat top 41% center;
+    }
 }
+
 
 @media (min-width: 1441px) {
 
@@ -93,6 +95,20 @@
     footer {
         max-width: 1440px;
         margin: auto;
+    }
+
+    section.video-section {
+        max-width: 1140px;
+        padding-top: 90px;
+        margin: 0 auto;
+    }
+
+    .video-section video {
+       border-radius: 4px;
+    }
+
+    .gallery-container {
+        padding: 40px 0;
     }
 }
 
