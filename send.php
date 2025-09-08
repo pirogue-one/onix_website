@@ -78,7 +78,12 @@
 		CURLOPT_URL => $queryURL,
 		CURLOPT_POSTFIELDS => $queryData,
 	));
-	$result = curl_exec($curl);
+	
+	if ($debug_mode) {
+		$result = '{"result":1}';
+	} else {
+		$result = curl_exec($curl);
+	}
 	$http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 	$curl_error = curl_error($curl);
 	curl_close($curl);
@@ -171,7 +176,7 @@
         <p>Ваша заявка была получена и передана в отдел продаж.</p>
         <div class="lead-number">№ <?php echo htmlspecialchars($result['result']); ?></div>
         <p>Наш менеджер свяжется с вами в ближайшее время.</p>
-        <a href="index.html" class="back-link">Вернуться на главную</a>
+        <a href="/" class="back-link">Вернуться на главную</a>
     </div>
 </body>
 </html>

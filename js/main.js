@@ -436,6 +436,112 @@
         });
     }
 
+    // Form submission with AJAX
+    function initFormSubmission() {
+        const forms = document.querySelectorAll('form[action="send.php"]');
+        
+        forms.forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                
+                const formData = new FormData(form);
+                const submitButton = form.querySelector('button[type="submit"]');
+                const originalButtonText = submitButton.textContent;
+                
+                // Show loading state
+                submitButton.textContent = 'Отправка...';
+                submitButton.disabled = true;
+                
+                // Send AJAX request
+                fetch('send.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    // Show success modal
+                    showResponseModal(html, 'success');
+                    
+                    // Reset form
+                    form.reset();
+                    
+                    // Close popup if it's the popup form
+                    const popup = document.getElementById('callBackPopup');
+                    if (form.closest('#callBackPopup')) {
+                        popup.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showResponseModal('Произошла ошибка при отправке формы. Попробуйте еще раз.', 'error');
+                })
+                .finally(() => {
+                    // Restore button state
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                });
+            });
+        });
+    }
+
+    // Show response modal
+    function showResponseModal(content, type) {
+        // Create modal if it doesn't exist
+        let modal = document.getElementById('responseModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'responseModal';
+            modal.className = 'response-modal-overlay';
+            modal.innerHTML = `
+                <div class="response-modal-content">
+                    <div class="response-modal-header">
+                        <h3 id="responseModalTitle">Результат</h3>
+                        <button class="response-modal-close" id="responseModalClose">&times;</button>
+                    </div>
+                    <div class="response-modal-body" id="responseModalBody">
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Add close functionality
+            const closeBtn = document.getElementById('responseModalClose');
+            closeBtn.addEventListener('click', function() {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            
+            // Close on overlay click
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+        
+        // Set content and show modal
+        const modalBody = document.getElementById('responseModalBody');
+        const modalTitle = document.getElementById('responseModalTitle');
+        
+        if (type === 'success') {
+            modalTitle.textContent = 'Заявка отправлена!';
+            modalBody.innerHTML = content;
+        } else {
+            modalTitle.textContent = 'Ошибка';
+            modalBody.innerHTML = `<p style="color: #dc3545;">${content}</p>`;
+        }
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
     // Initialize gallery when DOM is ready and all scripts are loaded
     $(document).ready(function () {
         // Initialize phone mask
@@ -448,6 +554,9 @@
         initPopup();
         initPopupPhoneMask();
         initPopupPlaceholderClear();
+
+        // Initialize form submission
+        initFormSubmission();
 
         // Wait a bit to ensure all scripts are loaded
         setTimeout(loadGalleryData, 100);
