@@ -40,6 +40,7 @@
     <script defer src="dist/js/swiper-bundle.min.js"></script>
     <script defer src="js/swiper.js"></script>
     <script defer src="js/modalmenu.js"></script>
+    <!-- <script defer src="js/bitrix24.js"></script> -->
 
 </head>
 
@@ -1230,23 +1231,23 @@
                 <h2>ОСТАЛИСЬ ВОПРОСЫ ?</h2>
                 <div class="form">
                     <h3>Свяжитесь с нами</h3>
-                    <form class="screen-body-item">
+                    <form class="screen-body-item" id="form-static" method="POST" action="send.php">
                         <div class="app-form">
                             <div class="app-form-group">
-                                <input class="app-form-control" type="name" placeholder="ИМЯ" required>
+                                <input name="NAME" class="app-form-control" type="name" placeholder="ИМЯ" required>
                             </div>
                             <div class="app-form-group">
-                                <input class="app-form-control" type="tel" placeholder="+7 999 999 99 99"
+                                <input name="PHONE" class="app-form-control" type="tel" placeholder="+7 999 999 99 99"
                                     id="phone-input" required>
                             </div>
                             <div class="app-form-group">
-                                <input class="app-form-control" type="email" placeholder="EMAIL">
+                                <input name="EMAIL" class="app-form-control" type="email" placeholder="EMAIL">
                             </div>
                             <div class="app-form-group message">
-                                <input class="app-form-control" type="text" placeholder="СООБЩЕНИЕ">
+                                <input name="MESSAGE" class="app-form-control" type="text" placeholder="СООБЩЕНИЕ">
                             </div>
                             <div class="app-form-group buttons">
-                                <button class="app-form-button">ОТПРАВИТЬ</button>
+                                <button type="submit" class="app-form-button" id="btn-submit-static">ОТПРАВИТЬ</button>
                             </div>
                         </div>
                         <label><input class="form-checkbox" type="checkbox" name="checkbox" value="checked"
@@ -1274,10 +1275,10 @@
                     <form class="screen-body-item">
                         <div class="app-form">
                             <div class="app-form-group">
-                                <input class="app-form-control" type="name" placeholder="ИМЯ" required>
+                                <input name="NAME" class="app-form-control" type="name" placeholder="ИМЯ" required>
                             </div>
                             <div class="app-form-group">
-                                <input class="app-form-control" type="tel" placeholder="+7 999 999 99 99"
+                                <input name="PHONE" class="app-form-control" type="tel" placeholder="+7 999 999 99 99"
                                     id="popup-phone-input" required>
                             </div>
                             <div class="app-form-group buttons">
