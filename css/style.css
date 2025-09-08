@@ -851,10 +851,17 @@ a.header-menu-item-accent::after {
   line-height: 28px;
   text-align: center;
   border-radius: 4px;
-  color: #FCC800;
   background-color: inherit;
   border: 0 solid #FFFFFF;
   text-align: left;
+}
+
+.yellow-color {
+  color: #FCC800;
+}
+
+.red-color {
+  color: #fc565f;
 }
 
 .btn-yellow {
