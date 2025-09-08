@@ -124,59 +124,44 @@
     <title>Заявка отправлена - ONIX Boats</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
+            font-family: "Inter", "Open Sans", sans-serif;
+		}
+           
         .success-container {
-            background: white;
+            background: #333;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 4px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             text-align: center;
         }
         .success-icon {
             font-size: 48px;
-            color: #28a745;
+            color: #FCC800;
             margin-bottom: 20px;
         }
-        h1 {
-            color: #333;
+        h3 {
+            font-family: "Bebas Neue", "Open Sans", sans-serif;
+			text-transform: uppercase;
             margin-bottom: 20px;
+			color: #FFFFFF;
         }
         .lead-number {
-            background: #FFD700;
+            background: #FCC800;
             color: #333;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 4px;
             font-weight: bold;
             display: inline-block;
             margin: 10px 0;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .back-link:hover {
-            background: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="success-container">
         <div class="success-icon">✓</div>
-        <h1>Заявка успешно отправлена!</h1>
-        <p>Ваша заявка была получена и передана в отдел продаж.</p>
+        <h3>Заявка успешно отправлена!</h3>
         <div class="lead-number">№ <?php echo htmlspecialchars($result['result']); ?></div>
         <p>Наш менеджер свяжется с вами в ближайшее время.</p>
-        <a href="/" class="back-link">Вернуться на главную</a>
     </div>
 </body>
 </html>
