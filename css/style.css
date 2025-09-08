@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #222222;
+  background-color: #232323;
   line-height: unset;
 }
 
@@ -137,14 +137,16 @@ h6 {
   margin: 0 !important;
 }
 
+.bg-img {
+  background: url(../images/Background.png) no-repeat top center;
+  background-size: cover;
+}
+
 .second-section {
   color: #333333;
   position: relative;
   z-index: 2;
   padding: 40px 0;
-  /* margin-top: -80px; */
-  background: url(../images/webp/bg2.webp) no-repeat top center;
-  background-size: cover;
 }
 
 /* .second-section .col-md-3 {
@@ -165,7 +167,7 @@ h6 {
 .third-section {
   /* background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.5)), url(../images/carbon_pattern.png) repeat;
   background-size: 10%; */
-  background-color: #303030;
+  background-color: #232323;
 }
 
 
@@ -187,7 +189,7 @@ h6 {
 }
 
 .fourth-section {
-  background: url(../images/webp/form-bg.webp);
+  /* background: url(../images/webp/form-bg.webp); */
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -252,7 +254,7 @@ img {
   position: relative;
 } */
 
- .mySlides {
+.mySlides {
   display: none;
   position: relative;
 }
@@ -281,7 +283,7 @@ img {
 
 .next {
   right: -50px;
-  border-radius:0  4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .prev {
@@ -327,7 +329,7 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
-} 
+}
 
 .form {
   position: relative;
@@ -509,7 +511,7 @@ img {
 .third-section,
 .gallery,
 .fourth-section {
-  padding: 146px 30px;
+  padding: 90px 30px;
 }
 
 .second-section {
@@ -700,7 +702,7 @@ a.header-menu-item-accent::after {
 /************ description ************/
 
 .description {
-  background-color: #222222;
+  background-color: #232323;
   display: flex;
   justify-content: flex-start;
 }
@@ -1003,11 +1005,20 @@ video {
 
 /************ filter products ************/
 
-.filter,
+.bg-form {
+  background: url(../images/webp/form_bg.webp) no-repeat top center;
+  background-size: cover;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  background-color: #232323;
+}
+
 .fourth-section {
   display: flex;
   justify-content: center;
-  background-color: #303030;
 }
 
 
@@ -1245,8 +1256,12 @@ a:hover {
 
 /******** about *********/
 
+.bg-about {
+  background-color: #303030;
+}
+
 .about {
-  background: url(../images/rec_bg.png) no-repeat center center;
+  /* background: url(../images/rec_bg.png) no-repeat center center; */
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -1254,6 +1269,7 @@ a:hover {
   z-index: 2;
   margin: -16px 0;
   position: relative;
+  background-color: #303030;
 }
 
 .about-container {
@@ -1308,7 +1324,7 @@ a:hover {
 
 .info-card {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   align-items: flex-start;
   background-color: #f5f5f5;
   padding: 2.188rem;
@@ -1349,7 +1365,7 @@ a:hover {
 /************ accordions ************/
 .accordions-wrapper {
   display: flex;
-    flex-direction: row;
+  flex-direction: row;
   gap: 30px;
   /* padding: 40px 20px; */
   /* max-width: 1200px; */
@@ -1438,11 +1454,11 @@ a:hover {
 
 /************ gallery ************/
 .gallery {
-  background-color: #303030;
+  background-color: #232323;
 }
 
 .gallery-container {
-  background-color: #303030;
+  background-color: #232323;
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -1581,7 +1597,7 @@ p {
 
 /************ Popup Form ************/
 .popup-overlay {
-    display: none;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1599,7 +1615,7 @@ p {
 
 .popup-content {
   background: #222222;
-    padding: 40px;
+  padding: 40px;
   border-radius: 4px;
   max-width: 500px;
   width: 90%;
@@ -1634,7 +1650,7 @@ p {
   color: #FCC800;
   font-size: 32px;
   cursor: pointer;
-    padding: 0;
+  padding: 0;
   width: 40px;
   height: 40px;
   display: flex;
@@ -1786,6 +1802,6 @@ p {
   color: #FFFFFF;
 }
 
-section:not(.hero) {
+/* section:not(.hero) {
   margin: -54px auto;
-}
+} */
