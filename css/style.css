@@ -163,8 +163,9 @@ h6 {
 }
 
 .third-section {
-  background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.5)), url(../images/carbon_pattern.png) repeat;
-  background-size: 10%;
+  /* background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.5)), url(../images/carbon_pattern.png) repeat;
+  background-size: 10%; */
+  background-color: #303030;
 }
 
 
@@ -1787,5 +1788,5 @@ p {
 }
 
 section:not(.hero) {
-  margin: -54px 0;
+  margin: -54px auto;
 }

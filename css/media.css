@@ -84,7 +84,7 @@
 
 @media (min-width: 1441px) {
 
-    section,
+    section:not(.hero),
     footer {
         max-width: 1440px;
         margin: auto;
@@ -187,7 +187,7 @@
     }
 
     section:not(.hero) {
-        margin: 0 0;
+        margin: 0 auto;
     }
 
     .my-slides-wrapper a,
