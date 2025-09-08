@@ -253,6 +253,16 @@
                     e.target.value = '';
                 }
             });
+
+            // Add custom validation
+            phoneInput.addEventListener('blur', function (e) {
+                const value = e.target.value.replace(/\D/g, ''); // Remove all non-digits
+                if (value.length > 0 && value.length < 11) {
+                    e.target.setCustomValidity('Введите полный номер телефона');
+                } else {
+                    e.target.setCustomValidity('');
+                }
+            });
         }
     }
 
@@ -388,6 +398,16 @@
             popupPhoneInput.addEventListener('keydown', function (e) {
                 if (e.key === 'Backspace' && e.target.value.length <= 2) {
                     e.target.value = '';
+                }
+            });
+
+            // Add custom validation for popup phone input
+            popupPhoneInput.addEventListener('blur', function (e) {
+                const value = e.target.value.replace(/\D/g, ''); // Remove all non-digits
+                if (value.length > 0 && value.length < 11) {
+                    e.target.setCustomValidity('Введите полный номер телефона');
+                } else {
+                    e.target.setCustomValidity('');
                 }
             });
         }
