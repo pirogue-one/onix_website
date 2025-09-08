@@ -1108,8 +1108,7 @@ form input[type="password"]:focus {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  padding: 100px 30px 40px;
-  background-color: #222222;
+  padding: 150px 30px 40px;
 }
 
 .footer-container {
