@@ -438,7 +438,7 @@
 
     // Form submission with AJAX
     function initFormSubmission() {
-        const forms = document.querySelectorAll('form[action="send.php"]');
+        const forms = document.querySelectorAll('.screen-body-item');
         
         forms.forEach(function(form) {
             form.addEventListener('submit', function(e) {

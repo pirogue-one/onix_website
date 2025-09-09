@@ -12,6 +12,8 @@
   $sName = isset($_POST["NAME"]) ? htmlspecialchars(trim($_POST["NAME"])) : '';
   $sEmail = isset($_POST["EMAIL"]) ? htmlspecialchars(trim($_POST["EMAIL"])) : '';
   $sMessage = isset($_POST["MESSAGE"]) ? htmlspecialchars(trim($_POST["MESSAGE"])) : '';
+  $roistatVisitId = array_key_exists('roistat_visit', $_COOKIE) ? $_COOKIE['roistat_visit'] : 'nocookie';
+
   
   // Валидация обязательных полей
   if (empty($sName)) {
@@ -37,7 +39,9 @@
 		"NAME" => $sName,
 		"COMMENTS" => $sMessage,
 		"SOURCE_ID" => "WEB",
-		"SOURCE_DESCRIPTION" => "Заявка с сайта onixboats.ru"
+		"SOURCE_DESCRIPTION" => "Заявка с сайта onixboats.ru",
+		"SOURCE_COMMON" => "ФОС",
+		"ROISTAT_VISIT" => $roistatVisitId
 	);
 	
 	// Добавляем телефон если есть
@@ -145,23 +149,16 @@
             margin-bottom: 20px;
 			color: #FFFFFF;
         }
-        .lead-number {
-            background: #FCC800;
-            color: #333;
-            padding: 10px 20px;
-            border-radius: 4px;
-            font-weight: bold;
-            display: inline-block;
-            margin: 10px 0;
-        }
+		p {
+			color: #FFFFFF;
+		}
     </style>
 </head>
 <body>
     <div class="success-container">
         <div class="success-icon">✓</div>
         <h3>Заявка успешно отправлена!</h3>
-        <div class="lead-number">№ <?php echo htmlspecialchars($result['result']); ?></div>
-        <p>Наш менеджер свяжется с вами в ближайшее время.</p>
+        <p>Наш менеджер свяжется с вами </br>в ближайшее время.</p>
     </div>
 </body>
 </html>

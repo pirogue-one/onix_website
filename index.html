@@ -84,6 +84,7 @@
     <!-- Main Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+
     <script src="dist/js/vendor/modernizr-2.6.2.min.js"></script>
 
     <script defer src="dist/js/vendor/jquery-1.10.1.min.js"></script>
@@ -95,7 +96,7 @@
     <script defer src="dist/js/swiper-bundle.min.js"></script>
     <script defer src="js/swiper.js"></script>
     <script defer src="js/modalmenu.js"></script>
-    <!-- <script defer src="js/bitrix24.js"></script> -->
+    <script defer src="js/cookie_popup.js"></script>
 
 </head>
 
@@ -107,7 +108,7 @@
     <!-- HEADER -->
     <header class="header">
         <div class="header-container content-wrapper">
-            <a class="header-logo-link" href="onixboats.ru">
+            <a class="header-logo-link" href="/">
                 <img src="images/logo.png" alt="Onix" class="logo">
             </a>
             <ul class="header-menu header-menu-desc">
@@ -661,8 +662,8 @@
                                     </p> -->
                                     <!-- ТОЛЬКО ЦЕНА ТОВАРА -->
                                     <p class="third-section-btn-container-text yellow-color"><span
-                                        class="third-section-btn-container-text text-white">от 35 000 000 ₽</span>
-                                </p>
+                                            class="third-section-btn-container-text text-white">от 35 000 000 ₽</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1316,9 +1317,9 @@
                         <a href="mailto:sale@onixboats.com" class="footer-info-text-main">sale@onixboats.com</a>
                     </div>
                     <div class="contact-us-social">
-                        <a href="t.me/onixboats">
+                        <a href="https://t.me/onixboats">
                             <img src="images/tg-white.png" alt="Телеграм" width="24"></a>
-                        <a href="vk.com/onixboats">
+                        <a href="https://vk.com/onixboats">
                             <img src="images/vk-white.png" alt="Вк" width="24"></a>
                         <a
                             href="https://www.avito.ru/brands/i268922538/all/vodnyy_transport?gdlkerfdnwq=101&page_from=from_item_card&iid=2696159109&sellerId=3ad65084c42a403988698f05cff9738c">
@@ -1373,6 +1374,27 @@
         <div><img src="https://mc.yandex.ru/watch/104066013" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!-- Cookie Notification -->
+    <div id="cookieNotification" class="cookie-notification">
+        <button class="cookie-notification-close" id="cookieNotificationClose">&times;</button>
+        <div class="cookie-notification-content">
+            <div class="cookie-notification-header">
+                <div class="cookie-notification-icon">🍪</div>
+                <h4 class="cookie-notification-title">Использование файлов cookie</h4>
+            </div>
+            <p class="cookie-notification-description">
+                Мы используем файлы cookie для улучшения работы сайта и анализа трафика.
+                Продолжая использовать сайт, вы соглашаетесь с <a href="privacy_policy.html#privacy-agreement">Политикой
+                    конфиденциальности</a>.
+            </p>
+            <div class="cookie-notification-buttons">
+                <button class="cookie-notification-btn" id="cookieAccept">Понятно</button>
+
+            </div>
+        </div>
+    </div>
+   
 </body>
 
 </html>
