@@ -40,8 +40,10 @@
 		"COMMENTS" => $sMessage,
 		"SOURCE_ID" => "WEB",
 		"SOURCE_DESCRIPTION" => "Заявка с сайта onixboats.ru",
-		"SOURCE_COMMON" => "ФОС",
-		"ROISTAT_VISIT" => $roistatVisitId
+		//поле source_common
+		"UF_CRM_1757433236" => "ФОС",
+		//поле roistat_visit
+		"UF_CRM_1757431790" => $roistatVisitId
 	);
 	
 	// Добавляем телефон если есть
